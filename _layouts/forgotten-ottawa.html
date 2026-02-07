@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+	<head>
+		<title>{{ page.title }}</title>
+		<link rel=icon href=/logos/fo-logo.png>
+		<!-- link to music stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		{% include fonts.html %}
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="{{ page.description }}" />
+		
+		<!--[if gte IE 9 | !IE ]><!-->
+		<link rel="stylesheet" href="/wet-boew/css/theme.min.css">
+		<!--<![endif]-->
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="/wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="/wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
+		<noscript><link rel="stylesheet" href="/wet-boew/css/noscript.min.css" /></noscript>
+		<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+	</head>
+	<body class="main">
+		<!--<a class="wb-lbx" title="Example of inline content" href="#inline_content">Inline content</a>-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 logo-centre"> <!-- align-items-center">-->
+					<a href="/">
+						<img id="logo" class="logo-img" src="/files/logo-with-text.png">
+					</a>
+								<!--<div class="row">
+									<a href="/"><img id="logo" class="logo-img" src="/forgotten-ottawa/files/logo-banner.png"></a>
+									<a href="/forgotten-ottawa"><img id="logo" class="logo-img" src="/forgotten-ottawa/files/post-office.png"></a>
+								</div>-->
+								<!--<h1><a href="/">Kevin Ballantyne</a></h1>
+							</div>
+							<!--<div class="col-md-9">
+								<!--<h1 class="center">FORGOTTEN OTTAWA</h1>
+								<h1>FORGOTTEN OTTAWA</h1>
+							</div>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			{% include nav.html %}
+			<div class="row">
+				<div class="col-md-12">
+					<div id="content">
+						{{ content }}
+					</div>
+				</div>
+				<!-- <div class="col-md-3 sidebar">
+					<div class="inner-sidebar">
+						<h4>Contact</h4>
+						<p class="sidebar">Email: <a class="main" href="mailto:geomatics@kballantyne.ca">geomatics@kballantyne.ca</a></p>
+					</div>
+				</div> -->
+			</div><!-- /.container -->
+			<div class="row">
+				<div class="col-md-12">
+					<footer>
+						<p class="foot-text">Site created by <a href="https://www.kballantyne.ca">Kevin Ballantyne</a> using Github, &#169; 2020-2026.</p>
+					</footer>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<!--[if gte IE 9 | !IE ]><!-->
+		<script src="/wet-boew/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/wet-boew/js/wet-boew.min.js"></script>
+		<!--<script>
+			(function(window, $, undefined) {
+
+				var conf = {
+					center: true,
+					backgroundControl: false
+				};
+
+				var cache = {
+					$carouselContainer: $('.thumbnails-carousel').parent(),
+					$thumbnailsLi: $('.thumbnails-carousel li'),
+					$controls: $('.thumbnails-carousel').parent().find('.carousel-control')
+				};
+
+				function init() {
+					cache.$carouselContainer.find('ol.carousel-indicators').addClass('indicators-fix');
+					cache.$thumbnailsLi.first().addClass('active-thumbnail');
+
+					if(!conf.backgroundControl) {
+						cache.$carouselContainer.find('.carousel-control').addClass('controls-background-reset');
+					}
+					else {
+						cache.$controls.height(cache.$carouselContainer.find('.carousel-inner').height());
+					}
+
+					if(conf.center) {
+						cache.$thumbnailsLi.wrapAll("<div class='center clearfix'></div>");
+					}
+				}
+
+				function refreshOpacities(domEl) {
+					cache.$thumbnailsLi.removeClass('active-thumbnail');
+					cache.$thumbnailsLi.eq($(domEl).index()).addClass('active-thumbnail');
+				}	
+
+				function bindUiActions() {
+					cache.$carouselContainer.on('slide.bs.carousel', function(e) {
+						refreshOpacities(e.relatedTarget);
+					});
+
+					cache.$thumbnailsLi.click(function(){
+						cache.$carouselContainer.carousel($(this).index());
+					});
+				}
+
+				$.fn.thumbnailsCarousel = function(options) {
+					conf = $.extend(conf, options);
+
+					init();
+					bindUiActions();
+
+					return this;
+				}
+
+			})(window, jQuery);
+
+			$('.thumbnails-carousel').thumbnailsCarousel();
+			
+			function toggleChevron(e) {
+				$(e.target)
+					.prev('.panel-heading')
+					.find("i.indicator")
+					.toggleClass('glyphicon-menu-down glyphicon-menu-up');
+			}
+			$('#accordion').on('hidden.bs.collapse', toggleChevron);
+			$('#accordion').on('shown.bs.collapse', toggleChevron);
+		</script>-->
+		<!--<![endif]-->
+		<!--[if lt IE 9]>
+		<script src="/wet-boew/js/ie8-wet-boew2.min.js"></script>
+
+		<![endif]-->
+		<!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+	</body>
+</html>

@@ -1,0 +1,747 @@
+/* @import url("fonts.css"); */
+
+body {
+	/* background: #3a3434 !important; */
+	/*background-image: url("../images/back-blurred_dark.jpg") !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;*/
+    /* margin: 20px auto; */
+    /* width: 60%; */
+	background-image: url("/files/1448x2574_background.jpg") !important;
+    background-size: 100% 100% !important;            /* stretches image across div */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+a {
+    text-decoration: underline !important;
+    color: #9FCCED !important;
+	font-weight: bold !important;
+}
+a:hover {
+    text-decoration: underline !important;
+	color: #00CCFF !important;
+	font-weight: bold !important;
+}
+a.on-white {
+    text-decoration: underline !important;
+    color: #0074D9 !important;
+}
+a.on-white:hover {
+    text-decoration: underline !important;
+	color: #001f3f !important;
+}
+header {
+	background: #fff;
+    width: 14.22222rem;
+    box-shadow: 1px 0 0 rgba(0,0,0,0.06);
+    overflow: auto;
+    /* z-index: 9997; */
+}
+
+/* #sidebar {
+	line-height:30px;
+    background-color:#000044;
+    height:300px;
+    width:20%;
+    float:right;
+    /* padding:5px;
+} */
+
+#content {
+	border-radius: 5px;
+	padding: 10px 30px 30px 30px;
+	background-color: rgba(0, 0, 0, 0.8);
+	/* background-image: url("../forgotten-ottawa/files/1692x3008_brighter.jpg");
+    background-size: 100% 100%;            /* stretches image across div
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.title {
+	/* text-align: center;*/
+	/* background: #0000ff; 
+	background: linear-gradient(left top, #000022 0%, #0000cc 100%); 
+	background: -moz-linear-gradient(left top, #000022 0%, 0000cc 100%);
+	background: -webkit-linear-gradient(left top, #000022 0%,#0000cc 100%);  */
+	/*background-image: url("../forgotten-ottawa/files/logo-banner.png");*/
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.title a {
+	text-decoration: none !important;
+    color: #FFFFFF !important;
+}
+
+.pad-left-10 {
+	padding-left: 10px !important;
+}
+
+.pad-left-20 {
+	padding-left: 20px !important;
+}
+
+.pad-left-30 {
+	padding-left: 30px !important;
+}
+
+.pad-left-40 {
+	padding-left: 40px !important;
+}
+
+.pad-left-70 {
+	padding-left: 70px !important;
+}
+
+.pad-left-80 {
+	padding-left: 80px !important;
+}
+
+.pad-top-10 {
+	padding-top: 10px !important;
+}
+
+.pad-top-20 {
+	padding-top: 20px !important;
+}
+
+/* h1 {
+	color: #FFFFFF;
+    font-size: 3em !important;
+    font-family: 'Pacifico' !important;
+	margin: 0px !important; 
+	padding: 50px 0px !important;
+	text-shadow: 2px 2px black;
+} */
+h1 {
+	color: #FFFFFF !important;
+	font-size: 7em !important;
+    /*font-size: 3em !important;
+    font-family: 'Pacifico' !important;*/
+	font-family: "SpecialElite-Bold", system-ui !important;
+	font-weight: bold;
+	font-style: normal;
+	margin: 0px !important; 
+	/* padding: 50px 0px !important; */
+	padding-top: 40px !important;
+	/* text-shadow: 2px 2px black; */
+	-webkit-text-stroke: 12px rgb(143, 0, 0);
+	paint-order: stroke fill;
+}
+
+.title .row {
+    display: flex;
+    align-items: center;
+}
+
+.logo-centre {
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;     /* Centers horizontally */
+	justify-content: center;    /* Centers vertically */
+	text-align: center;
+}
+
+.logo-img {
+	margin: 0px !important; 
+	/*padding-left: 45px !important;
+	padding-top: 50px !important;
+	padding-bottom: 30px !important;*/
+}
+.logo-map {
+	margin: 0px !important; 
+	padding-left: 20px !important;
+	padding-top: 10px !important;
+}
+
+/*#logo {
+	max-width: 300px !important;
+	width: 80% !important;
+}*/
+
+#logo-sm {
+	max-width: 175px !important;
+	width: 80% !important;
+}
+
+/* #reslayer {
+	background-color: yellow;
+}*/
+
+/* .h1-no-bottom-pad {
+	padding-bottom: 0px !important;
+}
+
+.h1-sub {
+	padding: 0px !important;
+	color: #FFFFFF;
+    font-size: 2em !important;
+    /* font-family: 'Pacifico'; 
+	font-family: 'Impact' !important;
+	margin: 0px !important; 
+	padding: 0px 0px 30px 0px !important;
+	/* text-shadow: 3px 3px 15px black !important;
+} */
+
+h2 {
+	color: #FFFFFF !important;
+	padding: 10px;
+    font-size: 5em !important;
+    /* font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif !important; */
+	/* font-family: Scada;*/
+	/* font-family: Kaushan Script !important; */
+	font-family: 'ForgottenOttawaSC' !important;
+	text-align: center;
+	font-weight: bold !important;
+	-webkit-text-stroke: 9px #8b3232;
+	paint-order: stroke fill;
+}
+.title-img {
+	display: block !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+th {
+	color:#FFFFFF !important;
+}
+td {
+	color:#FFFFFF !important;
+}
+.right-align {
+	text-align: right !important;
+}
+
+.pg-title {
+    width: 100%;
+    /* min-height: 220px;                 /* controls banner height */
+    display: flex;
+    align-items: center;               /* vertical centering */
+    justify-content: center;           /* horizontal centering */
+
+    /* background-image: url("../forgotten-ottawa/files/banner.png");
+    background-size: 100% 100%;            /* stretches image across div
+    background-position: center;
+    background-repeat: no-repeat;*/
+}
+
+.pg-title h2 {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.pg-subtitle {
+	text-align: center;
+	font-size: 2em;
+	/* font-family: Kaushan Script !important; */
+	font-family: 'Yanone Kaffeesatz' !important;
+	text-shadow: 2px 2px #000000;
+	color: #BBBBBB !important;
+}
+.pg-subtitle a {
+	color: #999999 !important;
+	text-decoration: none !important;
+}
+.pg-subtitle a:hover {
+	color: #999999 !important;
+	/* text-decoration: underline !important; */
+	text-shadow: 1px 1px #FFFFFF !important;
+}
+
+/* h3 {
+	font-family: Catamaran !important;
+	color: #FFFFFF !important;
+    font-size: 2em !important;
+	font-weight: bold !important;
+	text-align: left !important; 
+} */
+
+h3.center {
+	text-align: center !important;
+}
+h4 {
+	font-family: Catamaran !important;
+	color: #FFFFFF !important;
+	font-size: 1.6em !important;
+	font-weight: bold !important;
+	text-shadow: 2px 2px black;
+	text-align: center !important;
+}
+h4.sidebar {
+	color: #CCDDFF !important;
+	/* padding: 10px; */
+    font-size: 2em !important;
+	font-family: Catamaran !important;
+	text-align: center;
+	font-weight: bold !important;
+	text-shadow: 3px 3px #000000;
+}
+p {
+	font-family: Catamaran;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+}
+p.sidebar {
+	font-size: 1.2em;
+	text-align: center !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+p.small {
+	font-size: 1em;
+	text-align: center !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+p.tiny {
+	font-size: 0.8em;
+	text-align: center !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+p.center {
+	text-align: center !important;
+}
+footer {
+	/* background: rgba(50, 113, 231, 0.6);  */
+	/* background-color: #3355AA; */
+	/* background: rgba(170, 51, 51, 0.6); */
+	background: #581a1a;
+	/* background-color: transparent;
+	/*background: linear-gradient(left top, #000022 0%, #0000cc 100%);  
+	background: -moz-linear-gradient(left top, #000022 0%, 0000cc 100%);
+	background: -webkit-linear-gradient(left top, #000022 0%,#0000cc 100%); */
+    /* border-top: 1px solid #d5d5d5;*/ 
+    font-size: 1em;
+	border-radius: 5px;
+}
+hr.standard {
+	height: 1px;
+	border: none;
+	color: #333;
+	background-color: #ffffff
+}
+div.description {
+	margin-right: 30px;
+}
+p.description {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.foot-text {
+	padding-left: 30px;
+	font-size: small;
+}
+
+ul.posts { 
+    margin: 20px auto 40px;
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+.no-padding {
+	padding: 0 0 0 0;
+}
+
+/*.sidebar {
+	/* height: 90vh; 
+	/* margin-right: 18px; 
+}*/
+.sidebar-map {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+.inner-sidebar {
+	/* background-color: cornflowerblue; */
+	background-color: #3355AA;
+	border-radius: 5px;
+	/* opacity: 0.7; */
+    /* padding-left: 15px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.div-borders {
+	border:1px solid black;
+}
+.grad-nav {
+	background: #efefff; 
+	background: linear-gradient(top, #ffbebe 0%, #581a1a 60%);  
+	background: -moz-linear-gradient(top, #ffbebe 0%, #581a1a 60%);
+	background: -webkit-linear-gradient(top, #ffbebe 0%,#581a1a 60%);
+	background: -ms-linear-gradient(top, #ffbebe 0%,#581a1a 60%);
+	/* box-shadow: 0px 0px 9px rgba(0,0,0,0.15); */
+	font-family: 'Verdana';
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #ffffff;
+	/* padding: 0 0px; */
+	border-radius: 5px;
+	border-color: #c79898 !important;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	width: 100%;
+	margin: 0px;
+}
+.nav>li>a.map {
+    position: relative;
+    display: block;
+    padding: 15px 0px;
+}
+.sub-menu {
+	font-size: 1.3em !important;
+}
+ul.nav-font>li>a, ul.nav-font>li>details>summary {
+	/* font-family: 'Fjalla One' !important; */
+	/* font-family: Pompiere !important; */
+	font-family: 'ForgottenOttawaSC';
+	text-shadow: 2px 2px black;
+}
+
+ul.nav>li>a {
+	font-size: 1.5em !important;
+	text-decoration: none !important;
+	color: #FFFFFF !important;
+}
+
+.sub-font {
+	font-size: 1.6em !important
+}
+
+ul.nav>li:hover>a {
+	font-weight: bold !important;
+	font-size: 1.5em !important;
+	text-decoration: none !important;
+	color: #ffaaaa !important;
+}
+ul.dropdown-menu {
+	background-color: #581a1a;
+	border-color: #FFFFFF;
+	font-size: 1.1em;
+}
+ul.dropdown-menu>li>a, ul.dropdown-menu>li>details>summary {
+	text-decoration: none !important;
+	color: #FFFFFF !important;
+}
+ul.dropdown-menu>li:hover>a {
+	text-decoration: none !important;
+	background-color: #222222 !important;
+}
+ul.resume.posts { 
+    margin: 20px auto 40px !important;
+    font-size: 1em !important;
+}
+.dropdown:hover>ul.dropdown-menu {
+    /* display: block; */
+    margin-top: 0;
+}
+
+li.open.dropdown>a {
+	background-color: rgb(128, 0, 0) !important;
+	color: #EEEEFF !important;
+}
+
+h3.fottawa-heading {
+	/*text-align: center !important;*/
+	font-size: 3em;
+	/*margin-bottom: 10px;*/
+	margin: 0px !important;
+	display: inline-block;          /* Shrinks banner to text width */
+    padding: 15px 30px;              /* Space around text */
+    /* background-image: url("../forgotten-ottawa/files/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    color: #fff;
+	font-family: 'ForgottenOttawaSC' !important;
+	font-weight: bold !important;
+	-webkit-text-stroke: 7px #8b3232;
+	paint-order: stroke fill;
+}
+
+div.fottawa {
+    text-align: center;
+}
+
+/*div.fottawa {
+	height: 50%;
+	padding: 10px 0px 10px 0px;
+	object-fit: cover;
+	background-image: url("../forgotten-ottawa/files/banner.png");
+	/*background-size: cover; /* Ensures the image covers the entire h3 area 
+    background-position: center; /* Centers the image 
+    background-repeat: no-repeat;
+}*/
+
+figure.fottawa {
+	/*border: 1px solid;
+	border-color: #FFFFFF;*/
+	padding: 10px;
+	/*width: 75%;*/
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+img.fottawa {
+	border: 1px solid !important;
+	border-color: #666666 !important;
+}
+
+figcaption.fottawa {
+	color: #FFFFFF;
+	padding: 5px;
+	font-size: 1.4em;
+	text-align: center;
+	border: 1px solid;
+	border-color: #666666;
+	background-color: #555555;
+}
+
+.active {
+	background: navy !important;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 5px 5px 5px;
+    -moz-border-radius: 0 5px 5px;
+    border-radius: 0 5px 5px 5px;
+}
+
+/*.dropdown-submenu:hover>.dropdown-menu {
+    /* display: block;
+}*/
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 5px 0 5px 5px;
+    -moz-border-radius: 5px 0 5px 5px;
+    border-radius: 5px 0 5px 5px;
+}
+
+.home-img {
+	border: 1px solid;
+	/* margin-right: 15px; */
+	/* box-shadow: 3px 3px 5px #000000; */
+	/* width: 300px; */
+	width: 100%; 
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+}
+
+.thumbnail-img {
+	width: 100%;
+}
+
+.thumbnail-text {
+	/* color: #FFFFFF; */
+	padding: 5px;
+	font-size: 1.1em;
+	text-align: center;
+	border: 1px solid;
+	border-color: #666666;
+	background-color: #555555;
+}
+
+.thumbnail-row {
+	padding: 10px;
+}
+
+.main-img {
+	border: 1px solid;
+	margin-right: 15px;
+	box-shadow: 3px 3px 5px #000000;
+	height: 250px;
+}
+
+.main-img-xs {
+	border: 1px solid;
+	margin-right: 15px;
+	box-shadow: 3px 3px 5px #000000;
+	width: 80%;
+}
+
+.map-thumb {
+	border: 1px solid;
+	margin-right: 15px;
+	box-shadow: 3px 3px 5px #000000;
+	height: 230px;
+}
+
+.map-thumb-xs {
+	border: 1px solid;
+	margin-right: 15px;
+	box-shadow: 3px 3px 5px #000000;
+	width: 100%;
+}
+
+.abt-img-xs {
+	width: 50%;
+}
+
+.small-cap {
+	font-size: 97%;
+}
+
+.proj-indent {
+	padding-left: 10px;
+}
+
+.right-caret {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #FFFFFF;
+    display: inline-block;
+    height: 0;
+    opacity: 1;
+	padding-left: 5px;
+    /* vertical-align: top; */
+    width: 0;
+}
+
+.fire-idx {
+	width: 640px;
+	height: 480px;
+}
+
+.fire-idx-xs {
+	width: 100%;
+	height: 480px;
+}
+
+.resume {
+	font-family: Catamaran;
+    font-size: 1.1em;
+    line-height: 1em;
+    color: #FFFFFF;
+}
+
+.col-border {
+	border: 1px solid black !important;
+}
+
+.leg-tip {
+	border-bottom: 1px dotted black;
+	border-color: #FFFFFF;
+}
+.leg-tip .leg-tiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.leg-tip:hover .leg-tiptext {
+    visibility: visible;
+}
+
+.select-text {
+	color: #000000;
+}
+
+.download-btn {
+	line-height: 18px;
+}
+
+.footnotes {
+	font-size: 0.9em;
+	color: #FFFFFF;
+}
+
+.youtube {
+	margin: auto;
+	display: block;
+}
+
+@media (min-width: 767px) {
+	.dropdown:hover .dropdown-menu {
+		/* display: block; */
+	}
+	.sidebar-map {
+		padding-left: 30px !important;
+	}
+}
+
+@media (min-width: 1125px) {
+	.collapse.dont-collapse-sm {
+		display: block;
+		height: auto !important;
+		visibility: visible;
+	}
+	.visible-custom {
+		display: none !important;
+	}
+}
+@media (min-width: 1031px) {
+	.title {
+		background-size: 100%;
+	}
+	.title-map {
+		background-size: 100%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#geomatics {
+		width: 50% !important;
+	}
+	.geo-logo {
+		width: 50% !important;
+	}
+	.title-img {
+		width: 100px !important;
+	}
+	.sidebar-map {
+		padding-left: 0px !important;
+	}
+	.map {
+		height: 70vh !important;
+	}
+	.nav>li>a.map {
+		position: relative;
+		display: block;
+		padding: 10px 10px;
+	}
+}

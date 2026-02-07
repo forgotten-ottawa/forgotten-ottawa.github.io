@@ -1,0 +1,104 @@
+<nav class="navbar navbar-default grad-nav">
+	<button class="navbar-toggler visible-xs" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
+		&#9776;
+	</button>
+	<div class="container-fluid div-round-borders">
+		<!--alert({{ page.url }})-->
+		<div id="navbar-header" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav nav-font">
+				<li> <!-- Site Home -->
+					<a href="/">
+						HOME
+					</a>
+				</li>
+				<li class="dropdown"> <!-- Stories -->
+					<a href="#" data-toggle="dropdown" data-submenu="" aria-expanded="false"> <!-- aria-haspopup="true" aria-expanded="false"> -->
+						STORIES
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu nav-font">
+						<li> <!-- The Russell House Hotel -->
+							<a {% if page.url == "/stories/russell-house.html" %}class="active"{% endif %} 
+								href="/stories/russell-house.html">
+								The Russell House Hotel
+							</a>
+						</li>
+						<li> <!-- 1905 Stanley Cup Game & Kick -->
+							<a {% if page.url == "/stories/stanley-cup-kick.html" %}class="active"{% endif %} 
+								href="/stories/stanley-cup-kick.html">
+								1905 Stanley Cup Game & Kick
+							</a>
+						</li>
+						<li> <!-- Ottawa Sewer Explosions -->
+							<a {% if page.url == "/stories/ottawa-sewer-explosions.html" %}class="active"{% endif %} 
+								href="/stories/ottawa-sewer-explosions.html">
+								Ottawa Sewer Explosions
+							</a>
+						</li>
+						<li> <!-- The Standish Hall Hotel -->
+							<a {% if page.url == "/stories/standish-hall.html" %}class="active"{% endif %} 
+								href="/stories/standish-hall.html">
+								The Standish Hall Hotel
+							</a>
+						</li>
+					</ul>
+				</li>
+				<!--<li> <!-- Music Home
+					<a {% if page.url == "/music" %}class="active"{% endif %} href="/music">
+						FORGOTTEN OTTAWA
+					</a>
+				</li>
+				<li> <!-- List of Projects
+					<a {% if page.url == "/music/bio" %}class="active"{% endif %} 
+						href="/music/bio">
+						BIO
+					</a>
+				</li>
+				<li class="dropdown"> <!-- Albums
+					<a href="#" data-toggle="dropdown" data-submenu="" aria-expanded="false"> <!-- aria-haspopup="true" aria-expanded="false">
+						ALBUMS
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu nav-font">
+						<li> <!-- Drunk On A Bike
+							<a {% if page.url == "/music/albums/drunk-on-a-bike" %}class="active"{% endif %} 
+								href="/music/albums/drunk-on-a-bike">
+								Drunk On A Bike
+							</a>
+						</li>
+						<li> <!-- A Poet & A One Man Band
+							<a {% if page.url == "/music/albums/a-poet-and-a-one-man-band" %}class="active"{% endif %} 
+								href="/music/albums/a-poet-and-a-one-man-band">
+								A Poet & A One Man Band
+							</a>
+						</li>
+						<li> <!-- A Poet & A One Man Band
+							<a {% if page.url == "/music/albums/road-jam" %}class="active"{% endif %} 
+								href="/music/albums/road-jam">
+								Road Jam
+							</a>
+						</li>
+					</ul>
+				</li>-->
+				<!-- <li> 
+					<!-- List of Projects
+					<a {% if page.url == "/music/albums" %}class="active"{% endif %} 
+						href="/music/lyrics">
+						LYRICS
+					</a>
+				</li> -->
+				<!-- <li class="dropdown">
+					<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						Other Interests
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Music</a></li>
+						<li><a href="#">Photography</a></li>
+						<li><a href="#">Scripting</a></li> 
+					</ul>
+				</li> -->
+			</ul>
+		</div>
+	</div>
+</nav>
