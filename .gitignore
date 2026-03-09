@@ -1,5 +1,6 @@
 _site/
 run_jekyll.bat
+images/_thumbnail/*.xcf
 Rideau_Club_2_a042337.jpg
 geomatics/files/Ottawa_Street_Name_Origins_dev.geojson
 js/backup/

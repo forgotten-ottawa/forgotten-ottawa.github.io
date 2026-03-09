@@ -345,6 +345,13 @@ ul.posts li {
     list-style: none;
 }
 
+.guest-list {
+	font-family: Catamaran;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+}
+
 .no-padding {
 	padding: 0 0 0 0;
 }
