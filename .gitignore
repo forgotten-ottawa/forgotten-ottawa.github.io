@@ -1,4 +1,5 @@
 _site/
+_templates/
 run_jekyll.bat
 images/_thumbnail/*.xcf
 Rideau_Club_2_a042337.jpg

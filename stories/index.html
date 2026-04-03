@@ -1,0 +1,167 @@
+---
+layout: forgotten-ottawa
+title: List of Forgotten Ottawa Stories
+description: A list of stories covered by Forgotten Ottawa
+keywords: 
+---
+<div>
+	<!--<div class="pg-title">
+		<h2>Welcome to<br>Forgotten Ottawa</h2>
+		<p class="p-title">Ottawa is full of amazing stories and places that have become forgotten parts of its history.
+		<br>Forgotten Ottawa explores some of these lesser known stories.</p>
+	</div>-->
+	<div class="pg-title-subhero">
+		<div class="subhero-overlay">
+			<h1>Stories</h1>
+			<p class="subhero-tagline">Discover Forgotten Ottawa's stories.</p>
+		</div>
+	</div>
+</div>
+<div class="container my-5">
+	<div class="stories-filters mb-4">
+
+    	<input type="text" id="searchInput" class="form-control mb-3"
+           	placeholder="Search the stories...">
+
+    	<div id="categoryFilters" class="d-flex flex-wrap gap-3">
+			<label><input type="checkbox" value="hotel"> Hotels</label>
+			<label><input type="checkbox" value="building"> Buildings</label>
+			<label><input type="checkbox" value="fire"> Fires</label>
+			<label><input type="checkbox" value="politics"> Politics</label>
+			<label><input type="checkbox" value="health"> Health</label>
+			<label><input type="checkbox" value="disaster"> Disasters</label>
+			<label><input type="checkbox" value="sports"> Sports</label>
+			<label><input type="checkbox" value="event"> Events</label>
+    	</div>
+
+    	<div class="mt-3">
+      		<select id="sortSelect" class="form-select w-auto">
+				<option value="newest">Newest First</option>
+				<option value="oldest">Oldest First</option>
+				<option value="title">Title A–Z</option>
+      		</select>
+    	</div>
+
+  	</div>
+
+	<!-- Results Count -->
+  	<p id="resultsCount" class="text-muted mb-4"></p>
+
+  	<!-- Stories -->
+  	<div id="storiesList" class="stories-list">
+
+		<div class="stories-item row"
+			data-title="Russell House Hotel"
+			data-category="hotel fire politics building"
+			data-date="1863">
+			
+			<div class="col-md-4 stories-thumbnail-div">
+				<img class="stories-thumbnail" src="/images/thumbnails/russell-house-hotel.jpg">
+			</div>
+			<div class="col-md-8">
+				<h2 class="stories-heading">
+					Russell House Hotel
+				</h2>
+				<p class="stories-summary">
+					Ottawa's premier hotel for over 60 years until it was usurped by the Château Laurier...
+				</p>
+
+				<div class="stories-tags">
+					<span>Hotel</span>
+					<span>Fire</span>
+					<span>Politics</span>
+				</div>
+				
+				<div class="stories-button">
+					<a href="/stories/russell-house.html" class="btn btn-dark">
+						Read Story
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="stories-item row"
+			data-title="Stanely Cup Kick"
+			data-category="event sports"
+			data-date="1905">
+			
+			<div class="col-md-4 stories-thumbnail-div">
+				<img class="stories-thumbnail" src="/images/thumbnails/stanley-cup-kick.jpg">
+			</div>
+			<div class="col-md-8">
+				<h2 class="stories-heading">
+					1905 Stanley Cup Games & The Story of the Cup Kick
+				</h2>
+				<p class="stories-summary">
+					After winning the Stanley Cup, the Ottawa Silver Sevens celebrated with the Cup in a strange way...
+				</p>
+
+				<div class="stories-tags">
+					<span>Sports</span>
+					<span>Events</span>
+				</div>
+				
+				<div class="stories-button">
+					<a href="/stories/stanley-cup-kick.html" class="btn btn-dark">
+						Read Story
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="stories-item row"
+			data-title="Ottawa Sewer Explosions"
+			data-category="disaster event"
+			data-date="1929">
+			
+			<div class="col-md-4 stories-thumbnail-div">
+				<img class="stories-thumbnail" src="/images/thumbnails/ottawa-sewer-explosions.jpg">
+			</div>
+			<div class="col-md-8">
+				<h2 class="stories-heading">
+					The Ottawa Sewer Explosions
+				</h2>
+				<p class="stories-summary">
+					Within 2 years, Ottawa had not 1 but 2 sewer explosions...
+				</p>
+
+				<div class="stories-tags">
+					<span>Disasters</span>
+					<span>Events</span>
+				</div>
+				
+				<div class="stories-button">
+					<a href="/stories/ottawa-sewer-explosions.html" class="btn btn-dark">
+						Read Story
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="stories-item row"
+			data-title="Porter Island Isolation Hospital"
+			data-category="health"
+			data-date="1894">
+			
+			<div class="col-md-4 stories-thumbnail-div">
+				<img class="stories-thumbnail" src="/images/thumbnails/porter-island.jpg">
+			</div>
+			<div class="col-md-8">
+				<h2 class="stories-heading">
+					Porter Island Isolation Hospital
+				</h2>
+				<p class="stories-summary">
+					If you were unfortunate enough to catch smallpox in the 1890s, you'd most likely be sent to the dreaded Porter Island...
+				</p>
+
+				<div class="stories-tags">
+					<span>Health</span>
+				</div>
+				
+				<div class="stories-button">
+					<a href="/stories/porter-island.html" class="btn btn-dark">
+						Read Story
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

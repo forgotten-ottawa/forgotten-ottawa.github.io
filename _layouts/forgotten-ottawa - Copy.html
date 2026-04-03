@@ -22,22 +22,39 @@
 		<meta name="description" content="{{ page.description }}" />
 		
 		<!--[if gte IE 9 | !IE ]><!-->
-		<!-- <link rel="stylesheet" href="/wet-boew/css/theme.min.css"> -->
+		<link rel="stylesheet" href="/wet-boew/css/theme.min.css">
 		<!--<![endif]-->
 		<!--[if lt IE 9]>
 		<link rel="stylesheet" href="/wet-boew/css/ie8-theme.min.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="/wet-boew/js/ie8-wet-boew.min.js"></script>
 		<![endif]-->
-		<!--<noscript><link rel="stylesheet" href="/wet-boew/css/noscript.min.css" /></noscript>-->
-		<link rel="stylesheet" type="text/css" href="/bootstrap/5.3.8/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/bootstrap/5.3.8/css/navbar-top-fixed.css">
+		<noscript><link rel="stylesheet" href="/wet-boew/css/noscript.min.css" /></noscript>
+		<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
 	</head>
-	<body class="fixed-nav">
+	<body class="main">
 		<!--<a class="wb-lbx" title="Example of inline content" href="#inline_content">Inline content</a>-->
-		{% include nav.html %}
-		<main role="main" class="container full-width">
-		<!--<div class="container full-width">-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 logo-centre"> <!-- align-items-center">-->
+					<a href="/">
+						<img id="logo" class="logo-img" src="/files/logo-with-text.png">
+					</a>
+								<!--<div class="row">
+									<a href="/"><img id="logo" class="logo-img" src="/forgotten-ottawa/files/logo-banner.png"></a>
+									<a href="/forgotten-ottawa"><img id="logo" class="logo-img" src="/forgotten-ottawa/files/post-office.png"></a>
+								</div>-->
+								<!--<h1><a href="/">Kevin Ballantyne</a></h1>
+							</div>
+							<!--<div class="col-md-9">
+								<!--<h1 class="center">FORGOTTEN OTTAWA</h1>
+								<h1>FORGOTTEN OTTAWA</h1>
+							</div>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			{% include nav.html %}
 			<div class="row">
 				<div class="col-md-12">
 					<div id="content">
@@ -58,19 +75,16 @@
 					</footer>
 				</div>
 			</div>
-		</main>
-		<!--</div>-->
+		</div>
 		
 		
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<!--[if gte IE 9 | !IE ]><!-->
-		<!--<script src="/wet-boew/js/jquery/2.1.4/jquery.min.js"></script>-->
-		<script src="/bootstrap/5.3.8/js/bootstrap.min.js"></script>
-		<script src="/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
-		<script src="/js/stories.js"></script>
-		<!--<script src="/wet-boew/js/wet-boew.min.js"></script>-->
+		<script src="/wet-boew/js/jquery/2.1.4/jquery.min.js"></script>
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/wet-boew/js/wet-boew.min.js"></script>
 		<!--<script>
 			(function(window, $, undefined) {
 

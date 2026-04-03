@@ -12,6 +12,10 @@ body {
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+body.fixed-nav {
+	min-height: 75rem !important;
+	padding-top: 4.5rem !important;
+}
 a {
     text-decoration: underline !important;
     color: #9FCCED !important;
@@ -38,6 +42,11 @@ header {
     /* z-index: 9997; */
 }
 
+main.full-width {
+	max-width: 100%;
+	padding: 0px !important;
+}
+
 /* #sidebar {
 	line-height:30px;
     background-color:#000044;
@@ -48,9 +57,10 @@ header {
 } */
 
 #content {
-	border-radius: 5px;
-	padding: 10px 30px 30px 30px;
-	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 0px;
+	/*padding: 10px 30px 30px 30px;*/
+	/* background-color: rgb(255, 246, 207); /*, 0.8);*/ 
+	background-image: url("/files/1448x2574_background.jpg") !important;
 	/* background-image: url("../forgotten-ottawa/files/1692x3008_brighter.jpg");
     background-size: 100% 100%;            /* stretches image across div
     background-position: center;
@@ -72,6 +82,24 @@ header {
 .title a {
 	text-decoration: none !important;
     color: #FFFFFF !important;
+}
+
+.p-title {
+	-webkit-text-stroke: 3px #3b1313;
+	text-shadow: 3px 3px 1px #661414;
+	/*font-family: 'ForgottenOttawaRoman' !important;*/
+	/*font-family: 'Slabo 27px';*/
+	font-family: 'Caveat';
+	font-weight: bold !important;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+	paint-order: stroke fill;
+	text-align: center;
+}
+
+.description {
+	margin: 50px;
 }
 
 .pad-left-10 {
@@ -114,19 +142,33 @@ header {
 	padding: 50px 0px !important;
 	text-shadow: 2px 2px black;
 } */
-h1 {
+/* h1 {
 	color: #FFFFFF !important;
 	font-size: 7em !important;
     /*font-size: 3em !important;
-    font-family: 'Pacifico' !important;*/
-	font-family: "SpecialElite-Bold", system-ui !important;
+    font-family: 'Pacifico' !important;
+	font-family: "ForgottenOttawaSC", system-ui !important;
 	font-weight: bold;
 	font-style: normal;
 	margin: 0px !important; 
-	/* padding: 50px 0px !important; */
+	/* padding: 50px 0px !important;
 	padding-top: 40px !important;
-	/* text-shadow: 2px 2px black; */
+	/* text-shadow: 2px 2px black;
 	-webkit-text-stroke: 12px rgb(143, 0, 0);
+	paint-order: stroke fill;
+} */
+
+h1 {
+	color: #FFFFFF !important;
+	padding: 20px;
+    font-size: 7em !important;
+    /* font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif !important; */
+	/* font-family: Scada;*/
+	/* font-family: Kaushan Script !important; */
+	font-family: 'ForgottenOttawaSC' !important;
+	text-align: center;
+	font-weight: bold !important;
+	-webkit-text-stroke: 9px #661414;
 	paint-order: stroke fill;
 }
 
@@ -144,6 +186,56 @@ h1 {
 	text-align: center;
 }
 
+.pg-title-hero {
+    background: url("/files/title-card-sepia-dim.jpg") no-repeat center bottom;
+    background-size: cover;
+    height: 60vh; /* Takes up 60% of the screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    /* background: rgba(0, 0, 0, 0.5); /* Darkens the image so text is readable */
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.hero-tagline {
+	color: #FFFFFF;
+	-webkit-text-stroke: 3px #3b1313;
+	text-shadow: 3px 3px 1px #661414;
+	paint-order: stroke fill;
+}
+
+.pg-title-subhero {
+    background: url("/files/title-card-sepia-dim.jpg") no-repeat center bottom;
+    background-size: cover;
+    height: 40vh; /* Takes up 60% of the screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.subhero-overlay {
+    /* background: rgba(0, 0, 0, 0.5); /* Darkens the image so text is readable */
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.subhero-tagline {
+	color: #FFFFFF;
+	-webkit-text-stroke: 3px #3b1313;
+	text-shadow: 3px 3px 1px #661414;
+	paint-order: stroke fill;
+}
+
 .logo-img {
 	margin: 0px !important; 
 	/*padding-left: 45px !important;
@@ -156,38 +248,14 @@ h1 {
 	padding-top: 10px !important;
 }
 
-/*#logo {
-	max-width: 300px !important;
-	width: 80% !important;
-}*/
-
 #logo-sm {
 	max-width: 175px !important;
 	width: 80% !important;
 }
 
-/* #reslayer {
-	background-color: yellow;
-}*/
-
-/* .h1-no-bottom-pad {
-	padding-bottom: 0px !important;
-}
-
-.h1-sub {
-	padding: 0px !important;
-	color: #FFFFFF;
-    font-size: 2em !important;
-    /* font-family: 'Pacifico'; 
-	font-family: 'Impact' !important;
-	margin: 0px !important; 
-	padding: 0px 0px 30px 0px !important;
-	/* text-shadow: 3px 3px 15px black !important;
-} */
-
 h2 {
 	color: #FFFFFF !important;
-	padding: 10px;
+	padding: 20px;
     font-size: 5em !important;
     /* font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif !important; */
 	/* font-family: Scada;*/
@@ -195,7 +263,7 @@ h2 {
 	font-family: 'ForgottenOttawaSC' !important;
 	text-align: center;
 	font-weight: bold !important;
-	-webkit-text-stroke: 9px #8b3232;
+	-webkit-text-stroke: 9px #661414;
 	paint-order: stroke fill;
 }
 .title-img {
@@ -219,11 +287,11 @@ td {
     display: flex;
     align-items: center;               /* vertical centering */
     justify-content: center;           /* horizontal centering */
-
-    /* background-image: url("../forgotten-ottawa/files/banner.png");
-    background-size: 100% 100%;            /* stretches image across div
-    background-position: center;
-    background-repeat: no-repeat;*/
+	flex-direction: column;
+    background-image: url("/files/title-card-sepia-dim.jpg");
+    background-size: 100%; /* 100%;            /* stretches image across div */
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .pg-title h2 {
@@ -279,10 +347,11 @@ h4.sidebar {
 	text-shadow: 3px 3px #000000;
 }
 p {
-	font-family: Catamaran;
+	/*font-family: Catamaran;*/
+	font-family: 'Merriweather Sans';
     font-size: 1.4em;
     line-height: 1.5em;
-    color: #FFFFFF;
+    color: #360000;
 }
 p.sidebar {
 	font-size: 1.2em;
@@ -316,7 +385,7 @@ footer {
 	background: -webkit-linear-gradient(left top, #000022 0%,#0000cc 100%); */
     /* border-top: 1px solid #d5d5d5;*/ 
     font-size: 1em;
-	border-radius: 5px;
+	border-radius: 0px;
 }
 hr.standard {
 	height: 1px;
@@ -334,6 +403,8 @@ p.description {
 .foot-text {
 	padding-left: 30px;
 	font-size: small;
+	color: #FFFFFF;
+	margin: 0px !important;
 }
 
 ul.posts { 
@@ -356,6 +427,28 @@ ul.posts li {
 	padding: 0 0 0 0;
 }
 
+#stories {
+	background-color: rgb(66 33 33 / 0.3);
+}
+
+#latest-story {
+	background-color: rgb(33 33 33 / 0.3);
+}
+
+#timeline {
+	background-color: rgb(33 33 66 / 0.3);
+}
+
+#map {
+	background-color: rgb(33 66 33 / 0.3);
+}
+
+.index-section {
+	padding: 2em !important;
+	padding-left: 20em !important;
+	padding-right: 20em !important;
+}
+
 /*.sidebar {
 	/* height: 90vh; 
 	/* margin-right: 18px; 
@@ -367,14 +460,14 @@ ul.posts li {
 .inner-sidebar {
 	/* background-color: cornflowerblue; */
 	background-color: #3355AA;
-	border-radius: 5px;
+	border-radius: 0px;
 	/* opacity: 0.7; */
     /* padding-left: 15px; */
     padding-top: 15px;
     padding-bottom: 15px;
 }
 .div-borders {
-	border:1px solid black;
+	border: 1px solid black;
 }
 .grad-nav {
 	background: #efefff; 
@@ -385,16 +478,24 @@ ul.posts li {
 	/* box-shadow: 0px 0px 9px rgba(0,0,0,0.15); */
 	font-family: 'Verdana';
 	font-weight: bold;
-	font-size: 1.3em;
+	font-size: 1em;
 	color: #ffffff;
 	/* padding: 0 0px; */
-	border-radius: 5px;
+	border-radius: 0px;
 	border-color: #c79898 !important;
 	list-style: none;
 	position: relative;
 	display: inline-table;
 	width: 100%;
 	margin: 0px;
+	padding-left: 20px !important;
+	padding-right: 20px !important;
+}
+.navbar-nav {
+  	flex-wrap: nowrap !important;
+}
+.navbar-nav .nav-link {
+  	white-space: nowrap !important;
 }
 .nav>li>a.map {
     position: relative;
@@ -524,9 +625,9 @@ figcaption.fottawa {
     left: 100%;
     margin-top: -6px;
     margin-left: -1px;
-    -webkit-border-radius: 0 5px 5px 5px;
+    /*-webkit-border-radius: 0 5px 5px 5px;
     -moz-border-radius: 0 5px 5px;
-    border-radius: 0 5px 5px 5px;
+    border-radius: 0 5px 5px 5px;*/
 }
 
 /*.dropdown-submenu:hover>.dropdown-menu {
@@ -558,9 +659,9 @@ figcaption.fottawa {
 .dropdown-submenu.pull-left>.dropdown-menu {
     left: -100%;
     margin-left: 10px;
-    -webkit-border-radius: 5px 0 5px 5px;
+    /*-webkit-border-radius: 5px 0 5px 5px;
     -moz-border-radius: 5px 0 5px 5px;
-    border-radius: 5px 0 5px 5px;
+    border-radius: 5px 0 5px 5px;*/
 }
 
 .home-img {
@@ -575,6 +676,8 @@ figcaption.fottawa {
 
 .thumbnail-img {
 	width: 100%;
+	padding: 20px;
+	box-shadow: 5px 5px 15px #000000 !important;
 }
 
 .thumbnail-text {
@@ -646,7 +749,7 @@ figcaption.fottawa {
     background-color: black;
     color: #fff;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 0px;
     padding: 5px 0;
 
     /* Position the tooltip */
@@ -673,6 +776,81 @@ figcaption.fottawa {
 .youtube {
 	margin: auto;
 	display: block;
+}
+
+.stories-heading {
+	font-family: "Playfair Display", serif;
+	font-size: 2.5rem !important;
+	text-align: left;
+	padding: 0px;
+	-webkit-text-stroke: 6px #661414;
+}
+
+.stories-heading a {
+	text-decoration: none;
+	color: #222;
+}
+
+.stories-heading a:hover {
+  	text-decoration: underline;
+}
+
+/* List styling */
+.stories-list {
+  	border-top: 1px solid #ccc;
+}
+
+.stories-item {
+	padding: 1.5rem 0;
+	border-bottom: 1px solid #ddd;
+	background-color: rgb(255 255 255 / 0.3);
+	margin: 1em;
+}
+
+/* Meta (date) */
+.stories-meta {
+	font-size: 0.85rem;
+	color: #777;
+	margin-bottom: 0.3rem;
+	letter-spacing: 1px;
+}
+
+/* Summary */
+.stories-summary {
+	margin: 0.5rem 0;
+	color: #444;
+	text-align: left;
+}
+
+/* Tags */
+.stories-tags span {
+	display: inline-block;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 1px solid #bbb;
+	padding: 2px 6px;
+	margin-right: 6px;
+	color: #555;
+}
+
+/* Filters */
+.stories-filters label {
+	font-size: 0.9rem;
+	color: #444;
+}
+
+.stories-button {
+	padding: 1em;
+}
+
+.stories-thumbnail {
+	box-shadow: 5px 5px 15px #000000 !important;
+}
+
+.stories-thumbnail-div {
+	text-align: center;
+	height: 75%;
 }
 
 @media (min-width: 767px) {
