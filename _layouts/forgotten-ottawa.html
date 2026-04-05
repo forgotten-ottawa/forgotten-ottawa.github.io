@@ -31,12 +31,13 @@
 		<![endif]-->
 		<!--<noscript><link rel="stylesheet" href="/wet-boew/css/noscript.min.css" /></noscript>-->
 		<link rel="stylesheet" type="text/css" href="/bootstrap/5.3.8/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/bootstrap/5.3.8/css/navbar-top-fixed.css">
+		<!--<link rel="stylesheet" type="text/css" href="/bootstrap/5.3.8/css/navbar-top-fixed.css">-->
 	</head>
 	<body class="fixed-nav">
 		<!--<a class="wb-lbx" title="Example of inline content" href="#inline_content">Inline content</a>-->
 		{% include nav.html %}
-		<main role="main" class="container full-width">
+		<!--<main role="main" class="container full-width">-->
+		<main role="main" class="container-fluid">
 		<!--<div class="container full-width">-->
 			<div class="row">
 				<div class="col-md-12">
@@ -54,7 +55,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<footer>
-						<p class="foot-text">Site created by <a href="https://www.kballantyne.ca">Kevin Ballantyne</a> using Github, &#169; 2020-2026.</p>
+						<p class="foot-text">Site created by <a class="on-dark" href="https://www.kballantyne.ca">Kevin Ballantyne</a> using Github, &#169; 2020-2026.</p>
 					</footer>
 				</div>
 			</div>
@@ -67,9 +68,11 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<!--[if gte IE 9 | !IE ]><!-->
 		<!--<script src="/wet-boew/js/jquery/2.1.4/jquery.min.js"></script>-->
-		<script src="/bootstrap/5.3.8/js/bootstrap.min.js"></script>
+		<!--<script src="/bootstrap/5.3.8/js/bootstrap.min.js"></script>-->
 		<script src="/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
-		<script src="/js/stories.js"></script>
+		{% if page.url == "/stories/" %}
+			<script src="/js/stories.js"></script>
+		{% endif %}
 		<!--<script src="/wet-boew/js/wet-boew.min.js"></script>-->
 		<!--<script>
 			(function(window, $, undefined) {

@@ -8,7 +8,8 @@ body {
     /* margin: 20px auto; */
     /* width: 60%; */
 	background-image: url("/files/1448x2574_background.jpg") !important;
-    background-size: 100% 100% !important;            /* stretches image across div */
+    /* background-size: 100% 100% !important;            /* stretches image across div */
+	background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
@@ -18,7 +19,7 @@ body.fixed-nav {
 }
 a {
     text-decoration: underline !important;
-    color: #9FCCED !important;
+    color: #1c3e57 !important;
 	font-weight: bold !important;
 }
 a:hover {
@@ -33,6 +34,22 @@ a.on-white {
 a.on-white:hover {
     text-decoration: underline !important;
 	color: #001f3f !important;
+}
+a.on-dark {
+    text-decoration: underline !important;
+    color: #a4d4ff !important;
+}
+a.on-dark:hover {
+    text-decoration: underline !important;
+	color: #001f3f !important;
+}
+a.source {
+	color: #9dd8f0 !important;
+}
+a.source:hover {
+    text-decoration: underline !important;
+	color: #00CCFF !important;
+	font-weight: bold !important;
 }
 header {
 	background: #fff;
@@ -60,7 +77,7 @@ main.full-width {
 	border-radius: 0px;
 	/*padding: 10px 30px 30px 30px;*/
 	/* background-color: rgb(255, 246, 207); /*, 0.8);*/ 
-	background-image: url("/files/1448x2574_background.jpg") !important;
+	/* background-image: url("/files/1448x2574_background.jpg") !important;
 	/* background-image: url("../forgotten-ottawa/files/1692x3008_brighter.jpg");
     background-size: 100% 100%;            /* stretches image across div
     background-position: center;
@@ -161,7 +178,8 @@ main.full-width {
 h1 {
 	color: #FFFFFF !important;
 	padding: 20px;
-    font-size: 7em !important;
+    /*font-size: 7em !important;*/
+	font-size: clamp(2.5rem, 6vw, 7rem) !important;
     /* font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif !important; */
 	/* font-family: Scada;*/
 	/* font-family: Kaushan Script !important; */
@@ -189,7 +207,8 @@ h1 {
 .pg-title-hero {
     background: url("/files/title-card-sepia-dim.jpg") no-repeat center bottom;
     background-size: cover;
-    height: 60vh; /* Takes up 60% of the screen height */
+    min-height: 60vh; /* Takes up 60% of the screen height */
+	height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,7 +275,8 @@ h1 {
 h2 {
 	color: #FFFFFF !important;
 	padding: 20px;
-    font-size: 5em !important;
+    /* font-size: 5em !important; */
+	font-size: clamp(1.8rem, 3vw, 5rem) !important;
     /* font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif !important; */
 	/* font-family: Scada;*/
 	/* font-family: Kaushan Script !important; */
@@ -282,16 +302,67 @@ td {
 }
 
 .pg-title {
-    width: 100%;
+    height: 30vh;
     /* min-height: 220px;                 /* controls banner height */
     display: flex;
     align-items: center;               /* vertical centering */
     justify-content: center;           /* horizontal centering */
-	flex-direction: column;
+    text-align: center;
+    color: white;
+    position: relative;
+	padding: 2rem;
     background-image: url("/files/title-card-sepia-dim.jpg");
-    background-size: 100%; /* 100%;            /* stretches image across div */
+    background-size: 100%; /* 100%;            /* stretches image across div *
     background-position: bottom;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+}
+#standish-title {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/standish-hall/standish-hall.jpg")
+				center / cover no-repeat;
+}
+#russell-house {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/russell-house/russell-house-a008434.jpg")
+				center / cover no-repeat;
+}
+#stanley-cup {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/stanley-cup-kick/a049445-v8.jpg")
+				top / cover no-repeat;
+}
+#porter-island {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/porter-island/smallpox-tents-a009184.jpg")
+				center / cover no-repeat;
+}
+#movie-milestones {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/movie-milestones/monument-national-e011782876.jpg")
+				center / cover no-repeat;
+}
+#titanic-stories {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/ottawa-titanic-stories/titanic-departing-southampton.png")
+				center / cover no-repeat;
+}
+#shiners-war {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/shiners-war/peter-aylen-house.jpg")
+				center / cover no-repeat;
+}
+#upper-town {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/upper-town/41-cliff-street-e010900642.jpg")
+				center / cover no-repeat;
 }
 
 .pg-title h2 {
@@ -371,6 +442,13 @@ p.tiny {
 	padding-left: 10px !important;
 	padding-right: 10px !important;
 }
+p.source {
+	font-size: 0.8em;
+	color: #FFFFFF;
+	text-align: center !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
 p.center {
 	text-align: center !important;
 }
@@ -417,10 +495,10 @@ ul.posts li {
 }
 
 .guest-list {
-	font-family: Catamaran;
-    font-size: 1.4em;
+	font-family: Merriweather Sans;
+    font-size: 1.3em;
     line-height: 1.5em;
-    color: #FFFFFF;
+    color: #360000;
 }
 
 .no-padding {
@@ -443,10 +521,14 @@ ul.posts li {
 	background-color: rgb(33 66 33 / 0.3);
 }
 
-.index-section {
+/*.index-section {
 	padding: 2em !important;
 	padding-left: 20em !important;
 	padding-right: 20em !important;
+}*/
+
+.index-section {
+    padding: 2rem;
 }
 
 /*.sidebar {
@@ -476,7 +558,7 @@ ul.posts li {
 	background: -webkit-linear-gradient(top, #ffbebe 0%,#581a1a 60%);
 	background: -ms-linear-gradient(top, #ffbebe 0%,#581a1a 60%);
 	/* box-shadow: 0px 0px 9px rgba(0,0,0,0.15); */
-	font-family: 'Verdana';
+	font-family: 'ForgottenOttawaSC';
 	font-weight: bold;
 	font-size: 1em;
 	color: #ffffff;
@@ -492,7 +574,8 @@ ul.posts li {
 	padding-right: 20px !important;
 }
 .navbar-nav {
-  	flex-wrap: nowrap !important;
+  	/*flex-wrap: nowrap !important;*/
+	flex-wrap: wrap;
 }
 .navbar-nav .nav-link {
   	white-space: nowrap !important;
@@ -557,7 +640,8 @@ li.open.dropdown>a {
 
 h3.fottawa-heading {
 	/*text-align: center !important;*/
-	font-size: 3em;
+	/* font-size: 3em; */
+	font-size: clamp(1.8rem, 2vw, 3rem) !important;
 	/*margin-bottom: 10px;*/
 	margin: 0px !important;
 	display: inline-block;          /* Shrinks banner to text width */
@@ -676,6 +760,7 @@ figcaption.fottawa {
 
 .thumbnail-img {
 	width: 100%;
+	height: auto;
 	padding: 20px;
 	box-shadow: 5px 5px 15px #000000 !important;
 }
@@ -770,7 +855,8 @@ figcaption.fottawa {
 
 .footnotes {
 	font-size: 0.9em;
-	color: #FFFFFF;
+	font-family: 'Merriweather Sans';
+	color: #360000;
 }
 
 .youtube {
@@ -854,9 +940,9 @@ figcaption.fottawa {
 }
 
 @media (min-width: 767px) {
-	.dropdown:hover .dropdown-menu {
-		/* display: block; */
-	}
+	/*.dropdown:hover .dropdown-menu {
+		/* display: block; 
+	}*/
 	.sidebar-map {
 		padding-left: 30px !important;
 	}
@@ -869,6 +955,9 @@ figcaption.fottawa {
 		visibility: visible;
 	}
 	.visible-custom {
+		display: none !important;
+	}
+	.md-textlog {
 		display: none !important;
 	}
 }
@@ -901,4 +990,18 @@ figcaption.fottawa {
 		display: block;
 		padding: 10px 10px;
 	}
+}
+/* Desktop only */
+@media (min-width: 992px) {
+    .index-section {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+/* Items removed for mobile devices */
+@media (max-width: 767px) {
+    .thumbnail-img {
+        display: none;
+    }
 }
