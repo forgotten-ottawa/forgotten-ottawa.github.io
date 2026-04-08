@@ -1,0 +1,112 @@
+[
+    {
+        "id": "russell-house",
+        "title": "The Russell House Hotel",
+        "sort_year": "1845",
+        "date": "1845-1929",
+        "categories": ["hotel", "fire", "building"],
+        "coordinates": [-75.69505,45.42365],
+        "image": "/images/thumbnails/russell-house-hotel.jpg",
+        "summary": "Ottawa's premier hotel for over 60 years until it was usurped by the Château Laurier",
+        "url": "/stories/russell-house.html"
+    },
+    {
+        "id": "stanley-cup-kick",
+        "title": "1905 Stanley Cup Games & The Story of the Cup Kick",
+        "sort_year": "1905",
+        "date": "1905",
+        "categories": ["sports", "event"],
+        "coordinates": [-75.69985,45.40978],
+        "image": "/images/thumbnails/stanley-cup-kick.jpg",
+        "summary": "After winning the Stanley Cup, the Ottawa Silver Sevens celebrated with the Cup in a strange way",
+        "url": "/stories/stanley-cup-kick.html"
+    },
+    {
+        "id": "ottawa-sewer-explosions",
+        "title": "Ottawa Sewer Explosions",
+        "sort_year": "1929",
+        "date": "1929,1931",
+        "categories": ["disaster"],
+        "coordinates": [-75.67729,45.42579],
+        "image": "/images/thumbnails/ottawa-sewer-explosions.jpg",
+        "summary": "Within 2 years, Ottawa had not 1 but 2 sewer explosions",
+        "url": "/stories/ottawa-sewer-explosions.html"
+    },
+    {
+        "id": "porter-island",
+        "title": "Porter Island Isolation Hospital",
+        "sort_year": "1893",
+        "dates": "1893-1967",
+        "categories": ["health"],
+        "coordinates": [-75.68258,45.43776],
+        "image": "/images/thumbnails/porter-island.jpg",
+        "summary": "If you were unfortunate enough to catch smallpox in the 1890s, you'd most likely be sent to the dreaded Porter Island",
+        "url": "/stories/porter-island.html"
+    },
+    {
+        "id": "standish-hall-hotel",
+        "title": "The Standish Hall Hotel",
+        "sort_year": "1930",
+        "dates": "1930-1975",
+        "categories": ["hotel", "entertainment", "fire", "building"],
+        "coordinates": [-75.72268,45.42505],
+        "image": "/images/thumbnails/standish-hall-hotel.jpg",
+        "summary": "The Standish Hall hosted some of the biggest jazz musicians of the day",
+        "url": "/stories/standish-hall.html"
+    },
+    {
+        "id": "shiners-wars",
+        "title": "Peter Aylen & The Shiners’ War",
+        "sort_year": "1832",
+        "dates": "1832-1842",
+        "categories": ["conflict-unrest"],
+        "coordinates": [-75.74613,45.39532],
+        "image": "/images/thumbnails/shiners-war.jpg",
+        "summary": "Early Bytown was a lawless place run by a group called the Shiners",
+        "url": "/stories/shiners-war.html"
+    },
+    {
+        "id": "upper-town",
+        "title": "Upper Town",
+        "sort_year": "1826",
+        "dates": "1826-1938",
+        "categories": ["neighbourhood"],
+        "coordinates": [-75.70595,45.42142],
+        "image": "/images/thumbnails/upper-town.jpg",
+        "summary": "One of the original neighbourhoods of Bytown later lost to time",
+        "url": "/stories/upper-town.html"
+    },
+    {
+        "id": "ottawa-titanic-stories",
+        "title": "Titanic: The Ottawa Stories",
+        "sort_year": "1912",
+        "dates": "April 15, 1912",
+        "categories": ["event", "disaster"],
+        "coordinates": [-75.69461,45.42532],
+        "image": "/images/thumbnails/titanic-stories.jpg",
+        "summary": "From a railway magnate to a group from a small village in the Middle East, the stories of people who were Ottawa-bound on the Titanic",
+        "url": "/stories/ottawa-titanic-stories.html"
+    },
+    {
+        "id": "ottawa-movie-milestones",
+        "title": "Ottawa Movie Milestones",
+        "sort_year": "1894",
+        "dates": "1894-2019",
+        "categories": ["event", "entertainment"],
+        "coordinates": [-75.69824,45.41859],
+        "image": "/images/thumbnails/movie-milestones.jpg",
+        "summary": "Major moments for movies in Ottawa including the first public showing, the first 'talkie' and the first multiplex in the world",
+        "url": "/stories/movie-milestones.html"
+    },
+    {
+        "id": "hull-explosion",
+        "title": "Hull Explosion of 1910",
+        "sort_year": "1910",
+        "dates": "May 8, 1910",
+        "categories": ["disaster", "fire", "event"],
+        "coordinates": [-75.72769,45.43717],
+        "image": "/images/thumbnails/hull-explosion.jpg",
+        "summary": "In 1910, Hull was devestated by an explosion at an explosives factory",
+        "url": "/stories/hull-explosion.html"
+    }
+]

@@ -1,0 +1,186 @@
+
+/* **************** */
+/* Timeline styles */
+
+.timeline {
+	position: relative;
+	max-width: 80vw;
+	margin: 60px auto;
+	padding: 40px 0;
+}
+
+/* Center vertical line */
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 3px;
+	background: #7a5c3e; /* sepia */
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Each timeline item */
+.timeline-item {
+	position: relative;
+	width: 50%;
+	padding: 20px 40px;
+}
+
+/* Left side */
+.timeline-item.left {
+	left: 0;
+	text-align: right;
+}
+
+/* Right side */
+.timeline-item.right {
+	left: 50%;
+	text-align: left;
+}
+
+/* Content box */
+.content {
+	background: #f5f1e6; /* aged paper */
+	padding: 20px;
+	border-radius: 6px;
+	border: 1px solid #d8cfc0;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+	position: relative;
+}
+
+/* Year */
+.year {
+	font-family: 'Playfair Display', serif;
+	/*font-size: 2rem;*/
+	font-size: clamp(1rem, 1.5vw, 2rem);
+	color: #5a3e2b;
+	display: block;
+	margin-bottom: 6px;
+}
+
+/* Title */
+.content h3 {
+	margin: 0 0 8px;
+	font-family: 'Playfair Display', serif;
+}
+
+/* Image */
+.content img {
+	width: 50%;
+	margin-top: 10px;
+    margin-bottom: 10px;
+	border-radius: 4px;
+	filter: grayscale(20%) sepia(20%);
+}
+
+/* Timeline dots */
+.timeline-item::after {
+	content: '';
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background: #7a5c3e;
+	border: 3px solid #f5f1e6;
+	top: 30px;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+/* Dot positioning */
+.timeline-item.left::after {
+	right: -7px;
+}
+
+.timeline-item.right::after {
+	left: -7px;
+}
+
+/* Optional connector lines (nice detail) */
+.timeline-item.left .content::before {
+	content: '';
+	position: absolute;
+	top: 30px;
+	right: -10px;
+	width: 10px;
+	height: 2px;
+	background: #7a5c3e;
+}
+
+.timeline-item.right .content::before {
+	content: '';
+	position: absolute;
+	top: 30px;
+	left: -10px;
+	width: 10px;
+	height: 2px;
+	background: #7a5c3e;
+}
+
+/* Subtle hover effect */
+.content:hover {
+	transform: translateY(-4px);
+	transition: 0.2s ease;
+}
+
+.timeline-a {
+	text-decoration: none !important;
+}
+
+.timeline-a:hover {
+	text-decoration: none !important;
+}
+
+.timeine-img {
+    box-shadow: 1px 1px 5px black;
+}
+
+.read-more {
+	font-size: 1.2em !important;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* Move timeline line to the left */
+  .timeline::after {
+    left: 20px;
+    transform: none;
+  }
+
+  /* Full width items */
+  .timeline-item {
+    width: 100%;
+    padding: 10px 20px 10px 60px;
+    left: 0 !important;
+    text-align: left;
+  }
+
+  /* Force all items to behave like "right side" */
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  /* Position dots on left spine */
+  .timeline-item::after {
+    left: 13px;
+    right: auto;
+  }
+
+  /* Remove connector lines (cleaner on mobile) */
+  .timeline-item .content::before {
+    display: none;
+  }
+
+  /* Slightly reduce spacing */
+  .content {
+    padding: 16px;
+  }
+
+  /* Optional: make images slightly smaller */
+  .content img {
+    max-height: 220px;
+    object-fit: cover;
+  }
+}

@@ -1,5 +1,10 @@
 /* @import url("fonts.css"); */
 
+:root {
+	--nav-height: 70px;
+	--extra-offset: 20px;
+}
+
 body {
 	/* background: #3a3434 !important; */
 	/*background-image: url("../images/back-blurred_dark.jpg") !important;
@@ -12,6 +17,7 @@ body {
 	background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+	padding-top: var(--nav-height);
 }
 body.fixed-nav {
 	min-height: 75rem !important;
@@ -276,7 +282,7 @@ h2 {
 	color: #FFFFFF !important;
 	padding: 20px;
     /* font-size: 5em !important; */
-	font-size: clamp(1.8rem, 3vw, 5rem) !important;
+	font-size: clamp(1.8rem, 5vw, 6rem) !important;
     /* font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif !important; */
 	/* font-family: Scada;*/
 	/* font-family: Kaushan Script !important; */
@@ -364,11 +370,18 @@ td {
 				url("/images/upper-town/41-cliff-street-e010900642.jpg")
 				center / cover no-repeat;
 }
+#hull-explosion {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/hull-explosion/paper-image-2.jpg")
+				center / cover no-repeat;
+}
 
 .pg-title h2 {
     margin: 0;
     color: #fff;
     text-align: center;
+	/*font-size: 5em !important;*/
 }
 
 .pg-subtitle {
@@ -397,16 +410,23 @@ td {
 	text-align: left !important; 
 } */
 
+h3 {
+	font-family: ForgottenOttawaSC !important;
+	font-size: 2em !important;
+	font-weight: bold !important;
+}
+
 h3.center {
 	text-align: center !important;
 }
 h4 {
-	font-family: Catamaran !important;
+	font-family: ForgottenOttawaSC !important;
 	color: #FFFFFF !important;
-	font-size: 1.6em !important;
+	font-size: clamp(1.6rem, 2vw, 3rem) !important;
+	text-align: left !important;
 	font-weight: bold !important;
-	text-shadow: 2px 2px black;
-	text-align: center !important;
+	-webkit-text-stroke: 9px #661414;
+	paint-order: stroke fill;
 }
 h4.sidebar {
 	color: #CCDDFF !important;
@@ -570,8 +590,9 @@ ul.posts li {
 	display: inline-table;
 	width: 100%;
 	margin: 0px;
-	padding-left: 20px !important;
-	padding-right: 20px !important;
+	/* padding-left: 20px !important;
+	padding-right: 20px !important; */
+	height: var(--nav-height);
 }
 .navbar-nav {
   	/*flex-wrap: nowrap !important;*/
@@ -593,6 +614,12 @@ ul.nav-font>li>a, ul.nav-font>li>details>summary {
 	/* font-family: Pompiere !important; */
 	font-family: 'ForgottenOttawaSC';
 	text-shadow: 2px 2px black;
+}
+.story-content {
+	scroll-margin-top: calc(var(--nav-height) + var(--extra-offset));
+}
+p.bookmark {
+	scroll-margin-top: calc(var(--nav-height) + var(--extra-offset));
 }
 
 ul.nav>li>a {
@@ -1004,4 +1031,11 @@ figcaption.fottawa {
     .thumbnail-img {
         display: none;
     }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #581a1a; /* or your navbar color */
+    padding: 1rem;
+  }
 }

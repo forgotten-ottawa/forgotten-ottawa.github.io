@@ -7,8 +7,16 @@
 		<link rel=icon href=/logos/fo-logo.png>
 		<!-- link to music stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		{% if page.url == "/timeline/" %}
-			<link rel="stylesheet" type="text/css" href="/css/timeline.css">
+		{% if page.url contains "/timeline/" %}
+			<link rel="stylesheet" type="text/css" href="/timeline/css/timeline.css">
+			<script src="/timeline/js/timeline.js"></script>
+		{% endif %}
+		{% if page.url contains "/map/" %}
+			<link rel="stylesheet" type="text/css" href="/map/ol/4.6.5/ol.css">
+			<link rel="stylesheet" type="text/css" href="/map/css/map_styles.css">
+			<!--<script src="/map/ol/4.6.5/polyfill.min.js"></script>
+			<script src="/map/ol/4.6.5/requestanimationfix.js"></script>-->
+			<script src="/map/ol/4.6.5/ol.js"></script>
 		{% endif %}
 		{% include fonts.html %}
 		
@@ -70,82 +78,11 @@
 		<!--<script src="/wet-boew/js/jquery/2.1.4/jquery.min.js"></script>-->
 		<!--<script src="/bootstrap/5.3.8/js/bootstrap.min.js"></script>-->
 		<script src="/bootstrap/5.3.8/js/bootstrap.bundle.min.js"></script>
-		{% if page.url == "/stories/" %}
+		{% if page.url contains "/stories/" %}
 			<script src="/js/stories.js"></script>
 		{% endif %}
-		<!--<script src="/wet-boew/js/wet-boew.min.js"></script>-->
-		<!--<script>
-			(function(window, $, undefined) {
-
-				var conf = {
-					center: true,
-					backgroundControl: false
-				};
-
-				var cache = {
-					$carouselContainer: $('.thumbnails-carousel').parent(),
-					$thumbnailsLi: $('.thumbnails-carousel li'),
-					$controls: $('.thumbnails-carousel').parent().find('.carousel-control')
-				};
-
-				function init() {
-					cache.$carouselContainer.find('ol.carousel-indicators').addClass('indicators-fix');
-					cache.$thumbnailsLi.first().addClass('active-thumbnail');
-
-					if(!conf.backgroundControl) {
-						cache.$carouselContainer.find('.carousel-control').addClass('controls-background-reset');
-					}
-					else {
-						cache.$controls.height(cache.$carouselContainer.find('.carousel-inner').height());
-					}
-
-					if(conf.center) {
-						cache.$thumbnailsLi.wrapAll("<div class='center clearfix'></div>");
-					}
-				}
-
-				function refreshOpacities(domEl) {
-					cache.$thumbnailsLi.removeClass('active-thumbnail');
-					cache.$thumbnailsLi.eq($(domEl).index()).addClass('active-thumbnail');
-				}	
-
-				function bindUiActions() {
-					cache.$carouselContainer.on('slide.bs.carousel', function(e) {
-						refreshOpacities(e.relatedTarget);
-					});
-
-					cache.$thumbnailsLi.click(function(){
-						cache.$carouselContainer.carousel($(this).index());
-					});
-				}
-
-				$.fn.thumbnailsCarousel = function(options) {
-					conf = $.extend(conf, options);
-
-					init();
-					bindUiActions();
-
-					return this;
-				}
-
-			})(window, jQuery);
-
-			$('.thumbnails-carousel').thumbnailsCarousel();
-			
-			function toggleChevron(e) {
-				$(e.target)
-					.prev('.panel-heading')
-					.find("i.indicator")
-					.toggleClass('glyphicon-menu-down glyphicon-menu-up');
-			}
-			$('#accordion').on('hidden.bs.collapse', toggleChevron);
-			$('#accordion').on('shown.bs.collapse', toggleChevron);
-		</script>-->
-		<!--<![endif]-->
-		<!--[if lt IE 9]>
-		<script src="/wet-boew/js/ie8-wet-boew2.min.js"></script>
-
-		<![endif]-->
-		<!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+		{% if page.url contains "/map/" %}
+			<script src="/map/js/map.js"></script>
+		{% endif %}
 	</body>
 </html>

@@ -1,57 +1,164 @@
-const searchInput = document.getElementById("searchInput");
-const categoryCheckboxes = document.querySelectorAll("#categoryFilters input");
-const sortSelect = document.getElementById("sortSelect");
-const stories = Array.from(document.querySelectorAll(".stories-item"));
+let allStories = [];
+let activeCategories = new Set();
 
-function updateStories() {
+// ============================
+// INIT
+// ============================
+async function loadStories() {
+    try {
+        const res = await fetch('/data/stories.json');
+        allStories = await res.json();
 
-  const selectedCategories = Array.from(categoryCheckboxes)
-    .filter(cb => cb.checked)
-    .map(cb => cb.value);
-
-  let filtered = stories.filter(item => {
-    const title = item.dataset.title.toLowerCase();
-    const categories = item.dataset.category.split(" ");
-    const search = searchInput.value.toLowerCase();
-
-    const matchesSearch = title.includes(search);
-
-    const matchesCategory =
-      selectedCategories.length === 0 ||
-      selectedCategories.some(cat => categories.includes(cat));
-
-    return matchesSearch && matchesCategory;
-  });
-
-  // Sorting
-  const sortValue = sortSelect.value;
-
-  filtered.sort((a, b) => {
-    if (sortValue === "title") {
-      return a.dataset.title.localeCompare(b.dataset.title);
+        generateCategoryFilters(allStories);
+        filterAndRender(); // initial render
+    } catch (err) {
+        console.error('Error loading stories:', err);
     }
-    if (sortValue === "newest") {
-      return b.dataset.date - a.dataset.date;
-    }
-    if (sortValue === "oldest") {
-      return a.dataset.date - b.dataset.date;
-    }
-  });
-
-  const container = document.getElementById("storiesList");
-  container.innerHTML = "";
-
-  filtered.forEach(item => container.appendChild(item));
-
-  document.getElementById("resultsCount").innerText =
-    `${filtered.length} stories found`;
 }
 
-searchInput.addEventListener("input", updateStories);
-categoryCheckboxes.forEach(cb =>
-  cb.addEventListener("change", updateStories)
-);
-sortSelect.addEventListener("change", updateStories);
+// ============================
+// CATEGORY FILTERS
+// ============================
+function generateCategoryFilters(stories) {
+    const container = document.getElementById('categoryFilters');
 
-// Initial load
-updateStories();
+    // Get unique categories
+    const categories = new Set();
+    stories.forEach(story => {
+        story.categories.forEach(cat => categories.add(cat));
+    });
+
+    container.innerHTML = '';
+
+    categories.forEach(cat => {
+        const label = document.createElement('label');
+        label.className = "me-3";
+
+        label.innerHTML = `
+            <input type="checkbox" value="${cat}">
+            ${formatCategory(cat)}
+        `;
+
+        const checkbox = label.querySelector('input');
+
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                activeCategories.add(cat);
+            } else {
+                activeCategories.delete(cat);
+            }
+
+            filterAndRender();
+        });
+
+        container.appendChild(label);
+    });
+}
+
+// ============================
+// FILTER + SORT PIPELINE
+// ============================
+function filterAndRender() {
+    let filtered = [...allStories];
+
+    // SEARCH
+    const search = document.getElementById('searchInput').value.toLowerCase();
+    if (search) {
+        filtered = filtered.filter(story =>
+            story.title.toLowerCase().includes(search) ||
+            story.summary.toLowerCase().includes(search)
+        );
+    }
+
+    // CATEGORY FILTER
+    if (activeCategories.size > 0) {
+        filtered = filtered.filter(story =>
+            story.categories.some(cat => activeCategories.has(cat))
+        );
+    }
+
+    // SORTING
+    const sort = document.getElementById('sortSelect').value;
+
+    if (sort === 'newest') {
+        filtered.sort((a, b) => b.sort_year - a.sort_year);
+    } else if (sort === 'oldest') {
+        filtered.sort((a, b) => a.sort_year - b.sort_year);
+    } else if (sort === 'title') {
+        filtered.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    renderStories(filtered);
+}
+
+// ============================
+// RENDER STORIES
+// ============================
+function renderStories(stories) {
+    const container = document.getElementById('storiesList');
+    container.innerHTML = '';
+
+    stories.forEach(story => {
+        const div = document.createElement('div');
+        div.className = 'stories-item row';
+
+        div.innerHTML = `
+            <div class="col-md-4 stories-thumbnail-div">
+                <a href="${story.url}">
+                    <img class="stories-thumbnail" src="${story.image}" alt="${story.title}">
+                </a>
+            </div>
+            <div class="col-md-8">
+                <h2 class="stories-heading">${story.title}</h2>
+                <p class="stories-summary">${story.summary}...</p>
+                <div class="stories-meta">${story.date}</div>
+                <div class="stories-tags">
+                    ${story.categories.map(c => `<span>${formatCategory(c)}</span>`).join('')}
+                </div>
+                <div class="stories-button">
+                    <a class="btn btn-dark on-dark" href="${story.url}">
+                        Read Story
+                    </a>
+                </div>
+            </div>
+        `;
+
+        container.appendChild(div);
+    });
+
+    updateResultsCount(stories.length);
+}
+
+// ============================
+// HELPERS
+// ============================
+function formatCategory(cat) {
+    return cat
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, l => l.toUpperCase());
+}
+
+function updateResultsCount(count) {
+    const el = document.getElementById('resultsCount');
+    el.innerText = `${count} stor${count === 1 ? 'y' : 'ies'} found`;
+}
+
+// ============================
+// EVENT LISTENERS
+// ============================
+
+// Debounced search (smoother UX)
+let searchTimeout;
+document.getElementById('searchInput').addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(filterAndRender, 200);
+});
+
+// Sorting
+document.getElementById('sortSelect')
+    .addEventListener('change', filterAndRender);
+
+// ============================
+// START
+// ============================
+loadStories();
