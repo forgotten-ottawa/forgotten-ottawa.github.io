@@ -1,5 +1,10 @@
 /* @import url("fonts.css"); */
 
+:root {
+	--nav-height: 70px;
+	--extra-offset: 20px;
+}
+
 body {
 	/* background: #3a3434 !important; */
 	/*background-image: url("../images/back-blurred_dark.jpg") !important;
@@ -8,13 +13,19 @@ body {
     /* margin: 20px auto; */
     /* width: 60%; */
 	background-image: url("/files/1448x2574_background.jpg") !important;
-    background-size: 100% 100% !important;            /* stretches image across div */
+    /* background-size: 100% 100% !important;            /* stretches image across div */
+	background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+	padding-top: var(--nav-height);
+}
+body.fixed-nav {
+	min-height: 75rem !important;
+	padding-top: 4.5rem !important;
 }
 a {
     text-decoration: underline !important;
-    color: #9FCCED !important;
+    color: #1c3e57 !important;
 	font-weight: bold !important;
 }
 a:hover {
@@ -30,12 +41,33 @@ a.on-white:hover {
     text-decoration: underline !important;
 	color: #001f3f !important;
 }
+a.on-dark {
+    text-decoration: underline !important;
+    color: #a4d4ff !important;
+}
+a.on-dark:hover {
+    text-decoration: underline !important;
+	color: #001f3f !important;
+}
+a.source {
+	color: #9dd8f0 !important;
+}
+a.source:hover {
+    text-decoration: underline !important;
+	color: #00CCFF !important;
+	font-weight: bold !important;
+}
 header {
 	background: #fff;
     width: 14.22222rem;
     box-shadow: 1px 0 0 rgba(0,0,0,0.06);
     overflow: auto;
     /* z-index: 9997; */
+}
+
+main.full-width {
+	max-width: 100%;
+	padding: 0px !important;
 }
 
 /* #sidebar {
@@ -48,9 +80,10 @@ header {
 } */
 
 #content {
-	border-radius: 5px;
-	padding: 10px 30px 30px 30px;
-	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 0px;
+	/*padding: 10px 30px 30px 30px;*/
+	/* background-color: rgb(255, 246, 207); /*, 0.8);*/ 
+	/* background-image: url("/files/1448x2574_background.jpg") !important;
 	/* background-image: url("../forgotten-ottawa/files/1692x3008_brighter.jpg");
     background-size: 100% 100%;            /* stretches image across div
     background-position: center;
@@ -72,6 +105,24 @@ header {
 .title a {
 	text-decoration: none !important;
     color: #FFFFFF !important;
+}
+
+.p-title {
+	-webkit-text-stroke: 3px #3b1313;
+	text-shadow: 3px 3px 1px #661414;
+	/*font-family: 'ForgottenOttawaRoman' !important;*/
+	/*font-family: 'Slabo 27px';*/
+	font-family: 'Caveat';
+	font-weight: bold !important;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+	paint-order: stroke fill;
+	text-align: center;
+}
+
+.description {
+	margin: 50px;
 }
 
 .pad-left-10 {
@@ -114,19 +165,34 @@ header {
 	padding: 50px 0px !important;
 	text-shadow: 2px 2px black;
 } */
-h1 {
+/* h1 {
 	color: #FFFFFF !important;
 	font-size: 7em !important;
     /*font-size: 3em !important;
-    font-family: 'Pacifico' !important;*/
-	font-family: "SpecialElite-Bold", system-ui !important;
+    font-family: 'Pacifico' !important;
+	font-family: "ForgottenOttawaSC", system-ui !important;
 	font-weight: bold;
 	font-style: normal;
 	margin: 0px !important; 
-	/* padding: 50px 0px !important; */
+	/* padding: 50px 0px !important;
 	padding-top: 40px !important;
-	/* text-shadow: 2px 2px black; */
+	/* text-shadow: 2px 2px black;
 	-webkit-text-stroke: 12px rgb(143, 0, 0);
+	paint-order: stroke fill;
+} */
+
+h1 {
+	color: #FFFFFF !important;
+	padding: 20px;
+    /*font-size: 7em !important;*/
+	font-size: clamp(2.5rem, 6vw, 7rem) !important;
+    /* font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif !important; */
+	/* font-family: Scada;*/
+	/* font-family: Kaushan Script !important; */
+	font-family: 'ForgottenOttawaSC' !important;
+	text-align: center;
+	font-weight: bold !important;
+	-webkit-text-stroke: 9px #661414;
 	paint-order: stroke fill;
 }
 
@@ -144,6 +210,57 @@ h1 {
 	text-align: center;
 }
 
+.pg-title-hero {
+    background: url("/files/title-card-sepia-dim.jpg") no-repeat center bottom;
+    background-size: cover;
+    min-height: 60vh; /* Takes up 60% of the screen height */
+	height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-overlay {
+    /* background: rgba(0, 0, 0, 0.5); /* Darkens the image so text is readable */
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.hero-tagline {
+	color: #FFFFFF;
+	-webkit-text-stroke: 3px #3b1313;
+	text-shadow: 3px 3px 1px #661414;
+	paint-order: stroke fill;
+}
+
+.pg-title-subhero {
+    background: url("/files/title-card-sepia-dim.jpg") no-repeat center bottom;
+    background-size: cover;
+    height: 40vh; /* Takes up 60% of the screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.subhero-overlay {
+    /* background: rgba(0, 0, 0, 0.5); /* Darkens the image so text is readable */
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.subhero-tagline {
+	color: #FFFFFF;
+	-webkit-text-stroke: 3px #3b1313;
+	text-shadow: 3px 3px 1px #661414;
+	paint-order: stroke fill;
+}
+
 .logo-img {
 	margin: 0px !important; 
 	/*padding-left: 45px !important;
@@ -156,46 +273,23 @@ h1 {
 	padding-top: 10px !important;
 }
 
-/*#logo {
-	max-width: 300px !important;
-	width: 80% !important;
-}*/
-
 #logo-sm {
 	max-width: 175px !important;
 	width: 80% !important;
 }
 
-/* #reslayer {
-	background-color: yellow;
-}*/
-
-/* .h1-no-bottom-pad {
-	padding-bottom: 0px !important;
-}
-
-.h1-sub {
-	padding: 0px !important;
-	color: #FFFFFF;
-    font-size: 2em !important;
-    /* font-family: 'Pacifico'; 
-	font-family: 'Impact' !important;
-	margin: 0px !important; 
-	padding: 0px 0px 30px 0px !important;
-	/* text-shadow: 3px 3px 15px black !important;
-} */
-
 h2 {
 	color: #FFFFFF !important;
-	padding: 10px;
-    font-size: 5em !important;
+	padding: 20px;
+    /* font-size: 5em !important; */
+	font-size: clamp(1.8rem, 5vw, 6rem) !important;
     /* font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif !important; */
 	/* font-family: Scada;*/
 	/* font-family: Kaushan Script !important; */
 	font-family: 'ForgottenOttawaSC' !important;
 	text-align: center;
 	font-weight: bold !important;
-	-webkit-text-stroke: 9px #8b3232;
+	-webkit-text-stroke: 9px #661414;
 	paint-order: stroke fill;
 }
 .title-img {
@@ -214,22 +308,80 @@ td {
 }
 
 .pg-title {
-    width: 100%;
+    height: 30vh;
     /* min-height: 220px;                 /* controls banner height */
     display: flex;
     align-items: center;               /* vertical centering */
     justify-content: center;           /* horizontal centering */
-
-    /* background-image: url("../forgotten-ottawa/files/banner.png");
-    background-size: 100% 100%;            /* stretches image across div
-    background-position: center;
-    background-repeat: no-repeat;*/
+    text-align: center;
+    color: white;
+    position: relative;
+	padding: 2rem;
+    background-image: url("/files/title-card-sepia-dim.jpg");
+    background-size: 100%; /* 100%;            /* stretches image across div *
+    background-position: bottom;
+    background-repeat: no-repeat; */
+}
+#standish-title {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/standish-hall/standish-hall.jpg")
+				center / cover no-repeat;
+}
+#russell-house {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/russell-house/russell-house-a008434.jpg")
+				center / cover no-repeat;
+}
+#stanley-cup {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/stanley-cup-kick/a049445-v8.jpg")
+				top / cover no-repeat;
+}
+#porter-island {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/porter-island/smallpox-tents-a009184.jpg")
+				center / cover no-repeat;
+}
+#movie-milestones {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/movie-milestones/monument-national-e011782876.jpg")
+				center / cover no-repeat;
+}
+#titanic-stories {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/ottawa-titanic-stories/titanic-departing-southampton.png")
+				center / cover no-repeat;
+}
+#shiners-war {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/shiners-war/peter-aylen-house.jpg")
+				center / cover no-repeat;
+}
+#upper-town {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/upper-town/41-cliff-street-e010900642.jpg")
+				center / cover no-repeat;
+}
+#hull-explosion {
+	background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/hull-explosion/paper-image-2.jpg")
+				center / cover no-repeat;
 }
 
 .pg-title h2 {
     margin: 0;
     color: #fff;
     text-align: center;
+	/*font-size: 5em !important;*/
 }
 
 .pg-subtitle {
@@ -258,16 +410,23 @@ td {
 	text-align: left !important; 
 } */
 
+h3 {
+	font-family: ForgottenOttawaSC !important;
+	font-size: 2em !important;
+	font-weight: bold !important;
+}
+
 h3.center {
 	text-align: center !important;
 }
 h4 {
-	font-family: Catamaran !important;
+	font-family: ForgottenOttawaSC !important;
 	color: #FFFFFF !important;
-	font-size: 1.6em !important;
+	font-size: clamp(1.6rem, 2vw, 3rem) !important;
+	text-align: left !important;
 	font-weight: bold !important;
-	text-shadow: 2px 2px black;
-	text-align: center !important;
+	-webkit-text-stroke: 9px #661414;
+	paint-order: stroke fill;
 }
 h4.sidebar {
 	color: #CCDDFF !important;
@@ -279,10 +438,11 @@ h4.sidebar {
 	text-shadow: 3px 3px #000000;
 }
 p {
-	font-family: Catamaran;
+	/*font-family: Catamaran;*/
+	font-family: 'Merriweather Sans';
     font-size: 1.4em;
     line-height: 1.5em;
-    color: #FFFFFF;
+    color: #360000;
 }
 p.sidebar {
 	font-size: 1.2em;
@@ -302,6 +462,13 @@ p.tiny {
 	padding-left: 10px !important;
 	padding-right: 10px !important;
 }
+p.source {
+	font-size: 0.8em;
+	color: #FFFFFF;
+	text-align: center !important;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
 p.center {
 	text-align: center !important;
 }
@@ -316,7 +483,7 @@ footer {
 	background: -webkit-linear-gradient(left top, #000022 0%,#0000cc 100%); */
     /* border-top: 1px solid #d5d5d5;*/ 
     font-size: 1em;
-	border-radius: 5px;
+	border-radius: 0px;
 }
 hr.standard {
 	height: 1px;
@@ -334,6 +501,8 @@ p.description {
 .foot-text {
 	padding-left: 30px;
 	font-size: small;
+	color: #FFFFFF;
+	margin: 0px !important;
 }
 
 ul.posts { 
@@ -346,14 +515,40 @@ ul.posts li {
 }
 
 .guest-list {
-	font-family: Catamaran;
-    font-size: 1.4em;
+	font-family: Merriweather Sans;
+    font-size: 1.3em;
     line-height: 1.5em;
-    color: #FFFFFF;
+    color: #360000;
 }
 
 .no-padding {
 	padding: 0 0 0 0;
+}
+
+#stories {
+	background-color: rgb(66 33 33 / 0.3);
+}
+
+#latest-story {
+	background-color: rgb(33 33 33 / 0.3);
+}
+
+#timeline {
+	background-color: rgb(33 33 66 / 0.3);
+}
+
+#map {
+	background-color: rgb(33 66 33 / 0.3);
+}
+
+/*.index-section {
+	padding: 2em !important;
+	padding-left: 20em !important;
+	padding-right: 20em !important;
+}*/
+
+.index-section {
+    padding: 2rem;
 }
 
 /*.sidebar {
@@ -367,14 +562,14 @@ ul.posts li {
 .inner-sidebar {
 	/* background-color: cornflowerblue; */
 	background-color: #3355AA;
-	border-radius: 5px;
+	border-radius: 0px;
 	/* opacity: 0.7; */
     /* padding-left: 15px; */
     padding-top: 15px;
     padding-bottom: 15px;
 }
 .div-borders {
-	border:1px solid black;
+	border: 1px solid black;
 }
 .grad-nav {
 	background: #efefff; 
@@ -383,18 +578,28 @@ ul.posts li {
 	background: -webkit-linear-gradient(top, #ffbebe 0%,#581a1a 60%);
 	background: -ms-linear-gradient(top, #ffbebe 0%,#581a1a 60%);
 	/* box-shadow: 0px 0px 9px rgba(0,0,0,0.15); */
-	font-family: 'Verdana';
+	font-family: 'ForgottenOttawaSC';
 	font-weight: bold;
-	font-size: 1.3em;
+	font-size: 1em;
 	color: #ffffff;
 	/* padding: 0 0px; */
-	border-radius: 5px;
+	border-radius: 0px;
 	border-color: #c79898 !important;
 	list-style: none;
 	position: relative;
 	display: inline-table;
 	width: 100%;
 	margin: 0px;
+	/* padding-left: 20px !important;
+	padding-right: 20px !important; */
+	height: var(--nav-height);
+}
+.navbar-nav {
+  	/*flex-wrap: nowrap !important;*/
+	flex-wrap: wrap;
+}
+.navbar-nav .nav-link {
+  	white-space: nowrap !important;
 }
 .nav>li>a.map {
     position: relative;
@@ -409,6 +614,12 @@ ul.nav-font>li>a, ul.nav-font>li>details>summary {
 	/* font-family: Pompiere !important; */
 	font-family: 'ForgottenOttawaSC';
 	text-shadow: 2px 2px black;
+}
+.story-content {
+	scroll-margin-top: calc(var(--nav-height) + var(--extra-offset));
+}
+p.bookmark {
+	scroll-margin-top: calc(var(--nav-height) + var(--extra-offset));
 }
 
 ul.nav>li>a {
@@ -456,7 +667,8 @@ li.open.dropdown>a {
 
 h3.fottawa-heading {
 	/*text-align: center !important;*/
-	font-size: 3em;
+	/* font-size: 3em; */
+	font-size: clamp(1.8rem, 2vw, 3rem) !important;
 	/*margin-bottom: 10px;*/
 	margin: 0px !important;
 	display: inline-block;          /* Shrinks banner to text width */
@@ -524,9 +736,9 @@ figcaption.fottawa {
     left: 100%;
     margin-top: -6px;
     margin-left: -1px;
-    -webkit-border-radius: 0 5px 5px 5px;
+    /*-webkit-border-radius: 0 5px 5px 5px;
     -moz-border-radius: 0 5px 5px;
-    border-radius: 0 5px 5px 5px;
+    border-radius: 0 5px 5px 5px;*/
 }
 
 /*.dropdown-submenu:hover>.dropdown-menu {
@@ -558,9 +770,9 @@ figcaption.fottawa {
 .dropdown-submenu.pull-left>.dropdown-menu {
     left: -100%;
     margin-left: 10px;
-    -webkit-border-radius: 5px 0 5px 5px;
+    /*-webkit-border-radius: 5px 0 5px 5px;
     -moz-border-radius: 5px 0 5px 5px;
-    border-radius: 5px 0 5px 5px;
+    border-radius: 5px 0 5px 5px;*/
 }
 
 .home-img {
@@ -575,6 +787,9 @@ figcaption.fottawa {
 
 .thumbnail-img {
 	width: 100%;
+	height: auto;
+	padding: 20px;
+	box-shadow: 5px 5px 15px #000000 !important;
 }
 
 .thumbnail-text {
@@ -646,7 +861,7 @@ figcaption.fottawa {
     background-color: black;
     color: #fff;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 0px;
     padding: 5px 0;
 
     /* Position the tooltip */
@@ -667,7 +882,8 @@ figcaption.fottawa {
 
 .footnotes {
 	font-size: 0.9em;
-	color: #FFFFFF;
+	font-family: 'Merriweather Sans';
+	color: #360000;
 }
 
 .youtube {
@@ -675,10 +891,85 @@ figcaption.fottawa {
 	display: block;
 }
 
+.stories-heading {
+	font-family: "Playfair Display", serif;
+	font-size: 2.5rem !important;
+	text-align: left;
+	padding: 0px;
+	-webkit-text-stroke: 6px #661414;
+}
+
+.stories-heading a {
+	text-decoration: none;
+	color: #222;
+}
+
+.stories-heading a:hover {
+  	text-decoration: underline;
+}
+
+/* List styling */
+.stories-list {
+  	border-top: 1px solid #ccc;
+}
+
+.stories-item {
+	padding: 1.5rem 0;
+	border-bottom: 1px solid #ddd;
+	background-color: rgb(255 255 255 / 0.3);
+	margin: 1em;
+}
+
+/* Meta (date) */
+.stories-meta {
+	font-size: 0.85rem;
+	color: #777;
+	margin-bottom: 0.3rem;
+	letter-spacing: 1px;
+}
+
+/* Summary */
+.stories-summary {
+	margin: 0.5rem 0;
+	color: #444;
+	text-align: left;
+}
+
+/* Tags */
+.stories-tags span {
+	display: inline-block;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 1px solid #bbb;
+	padding: 2px 6px;
+	margin-right: 6px;
+	color: #555;
+}
+
+/* Filters */
+.stories-filters label {
+	font-size: 0.9rem;
+	color: #444;
+}
+
+.stories-button {
+	padding: 1em;
+}
+
+.stories-thumbnail {
+	box-shadow: 5px 5px 15px #000000 !important;
+}
+
+.stories-thumbnail-div {
+	text-align: center;
+	height: 75%;
+}
+
 @media (min-width: 767px) {
-	.dropdown:hover .dropdown-menu {
-		/* display: block; */
-	}
+	/*.dropdown:hover .dropdown-menu {
+		/* display: block; 
+	}*/
 	.sidebar-map {
 		padding-left: 30px !important;
 	}
@@ -691,6 +982,9 @@ figcaption.fottawa {
 		visibility: visible;
 	}
 	.visible-custom {
+		display: none !important;
+	}
+	.md-textlog {
 		display: none !important;
 	}
 }
@@ -723,4 +1017,25 @@ figcaption.fottawa {
 		display: block;
 		padding: 10px 10px;
 	}
+}
+/* Desktop only */
+@media (min-width: 992px) {
+    .index-section {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+/* Items removed for mobile devices */
+@media (max-width: 767px) {
+    .thumbnail-img {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #581a1a; /* or your navbar color */
+    padding: 1rem;
+  }
 }

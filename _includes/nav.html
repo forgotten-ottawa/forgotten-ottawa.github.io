@@ -1,133 +1,50 @@
-<nav class="navbar navbar-default grad-nav">
-	<button class="navbar-toggler visible-xs" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header">
-		&#9776;
-	</button>
-	<div class="container-fluid div-round-borders">
-		<!--alert({{ page.url }})-->
-		<div id="navbar-header" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav nav-font">
-				<li> <!-- Site Home -->
-					<a href="/">
-						HOME
-					</a>
-				</li>
-				<li class="dropdown"> <!-- Stories -->
-					<a href="#" data-toggle="dropdown" data-submenu="" aria-expanded="false"> <!-- aria-haspopup="true" aria-expanded="false"> -->
-						STORIES
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu nav-font">
-						<li> <!-- Upper Town -->
-							<a {% if page.url == "/stories/upper-town.html" %}class="active"{% endif %} 
-								href="/stories/upper-town.html">
-								Upper Town
-							</a>
-						</li>
-						<li> <!-- Shiners' War -->
-							<a {% if page.url == "/stories/shiners-war.html" %}class="active"{% endif %} 
-								href="/stories/shiners-war.html">
-								Peter Aylen & The Shiners’ War
-							</a>
-						</li>
-						<li> <!-- The Russell House Hotel -->
-							<a {% if page.url == "/stories/russell-house.html" %}class="active"{% endif %} 
-								href="/stories/russell-house.html">
-								The Russell House Hotel
-							</a>
-						</li>
-						<li> <!-- Porter Island -->
-							<a {% if page.url == "/stories/porter-island.html" %}class="active"{% endif %} 
-								href="/stories/porter-island.html">
-								Porter Island
-							</a>
-						</li>
-						<li> <!-- 1905 Stanley Cup Game & Kick -->
-							<a {% if page.url == "/stories/stanley-cup-kick.html" %}class="active"{% endif %} 
-								href="/stories/stanley-cup-kick.html">
-								1905 Stanley Cup Game & Kick
-							</a>
-						</li>
-						<li> <!-- Titanic Stories -->
-							<a {% if page.url == "/stories/ottawa-titanic-stories.html" %}class="active"{% endif %} 
-								href="/stories/ottawa-titanic-stories.html">
-								Titanic: The Ottawa Stories
-							</a>
-						</li>
-						<li> <!-- Ottawa Sewer Explosions -->
-							<a {% if page.url == "/stories/ottawa-sewer-explosions.html" %}class="active"{% endif %} 
-								href="/stories/ottawa-sewer-explosions.html">
-								Ottawa Sewer Explosions
-							</a>
-						</li>
-						<li> <!-- The Standish Hall Hotel -->
-							<a {% if page.url == "/stories/standish-hall.html" %}class="active"{% endif %} 
-								href="/stories/standish-hall.html">
-								The Standish Hall Hotel
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li> <!-- Site Home -->
-					<a href="/timeline">
-						TIMELINE
-					</a>
-				</li>
-				<!--<li> <!-- Music Home
-					<a {% if page.url == "/music" %}class="active"{% endif %} href="/music">
-						FORGOTTEN OTTAWA
-					</a>
-				</li>
-				<li> <!-- List of Projects
-					<a {% if page.url == "/music/bio" %}class="active"{% endif %} 
-						href="/music/bio">
-						BIO
-					</a>
-				</li>
-				<li class="dropdown"> <!-- Albums
-					<a href="#" data-toggle="dropdown" data-submenu="" aria-expanded="false"> <!-- aria-haspopup="true" aria-expanded="false">
-						ALBUMS
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu nav-font">
-						<li> <!-- Drunk On A Bike
-							<a {% if page.url == "/music/albums/drunk-on-a-bike" %}class="active"{% endif %} 
-								href="/music/albums/drunk-on-a-bike">
-								Drunk On A Bike
-							</a>
-						</li>
-						<li> <!-- A Poet & A One Man Band
-							<a {% if page.url == "/music/albums/a-poet-and-a-one-man-band" %}class="active"{% endif %} 
-								href="/music/albums/a-poet-and-a-one-man-band">
-								A Poet & A One Man Band
-							</a>
-						</li>
-						<li> <!-- A Poet & A One Man Band
-							<a {% if page.url == "/music/albums/road-jam" %}class="active"{% endif %} 
-								href="/music/albums/road-jam">
-								Road Jam
-							</a>
-						</li>
-					</ul>
-				</li>-->
-				<!-- <li> 
-					<!-- List of Projects
-					<a {% if page.url == "/music/albums" %}class="active"{% endif %} 
-						href="/music/lyrics">
-						LYRICS
-					</a>
-				</li> -->
-				<!-- <li class="dropdown">
-					<a href="#" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-						Other Interests
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Music</a></li>
-						<li><a href="#">Photography</a></li>
-						<li><a href="#">Scripting</a></li> 
-					</ul>
-				</li> -->
-			</ul>
-		</div>
-	</div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark grad-nav"><!--navbar-light bg-light">-->
+  <div class="container-fluid">
+    <a class="navbar-brand logo-img" href="/">
+		<!-- Desktop logo -->
+  		<img class="d-none d-md-inline" src="/files/logo-banner.png" style="height: 60px;" alt="Forgotten Ottawa">
+
+  		<!-- Mobile text -->
+  		<span class="d-inline d-md-none small-caps" style="color: white; text-decoration: none;">Forgotten Ottawa</span>
+	</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-header">
+      	<span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar-header" class="collapse navbar-collapse">
+      	<!-- ms-auto pushes navigation and buttons to the right -->
+      	<ul class="nav navbar-nav ms-auto nav-font">
+			<li class="nav-item"> <!-- Site Home -->
+				<a class="nav-link" href="/">
+					HOME
+				</a>
+			</li>
+			<li class="nav-item"> <!-- Stories -->
+				<a class="nav-link" href="/stories">
+					STORIES
+				</a>
+			</li>
+			<li class="nav-item"> <!-- Map -->
+				<a class="nav-link" href="/map">
+					MAP
+				</a>
+			</li>
+			<li class="nav-item"> <!-- Timeline -->
+				<a class="nav-link" href="/timeline">
+					TIMELINE
+				</a>
+			</li>
+			<li class="nav-item"> <!-- Site Home -->
+				<a class="nav-link" href="https://www.youtube.com/@forgottenottawa5771">
+					<img src="/files/yt_icon_white_digital.png" height="40">
+				</a>
+			</li>
+      	</ul>
+		<!--<div class="d-flex">
+			<button class="btn btn-outline-primary me-2">Login</button>
+			<button class="btn btn-primary">Sign Up</button>
+		</div>-->
+    </div>
+  </div>
 </nav>

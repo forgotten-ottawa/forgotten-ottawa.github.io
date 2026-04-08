@@ -192,3 +192,81 @@
   src: local('Kaushan Script'), local('KaushanScript-Regular'), url(https://fonts.gstatic.com/s/kaushanscript/v4/qx1LSqts-NtiKcLw4N03IEd0sm1ffa_JvZxsF_BEwQk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+.slabo-27px-regular {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.marck-script-regular {
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.vollkorn-regular {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.eagle-lake-regular {
+  font-family: "Eagle Lake", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.caveat-regular {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.boogaloo-regular {
+  font-family: "Boogaloo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.quattrocento-sans-regular {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.quattrocento-sans-bold {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.quattrocento-sans-regular-italic {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.quattrocento-sans-bold-italic {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.cabin-condensed-regular {
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.cabin-condensed-medium {
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.cabin-condensed-semibold {
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.cabin-condensed-bold {
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.merriweather-sans-regular {
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
