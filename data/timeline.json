@@ -2,10 +2,10 @@
   {
     "date": "October 18, 1826",
     "sortYear": "1826",
-    "title": "Bytown Is Established",
+    "title": "Bytown Is Settled",
     "description": "Upper and Lower Bytown becomes available for residency.",
     "image": "/images/upper-town/upper-town-n0022402k.jpg",
-    "link": "/stories/upper-town.html"
+    "link": "/stories/upper-town.html#origins"
   },
   {
     "date": "1832",
@@ -13,7 +13,7 @@
     "title": "The Shiners' War Begins",
     "description": "The construction of the Rideau Canal is complete, leaving the Irish navvies out of work.",
     "image": "/images/shiners-war/c011864k.jpg",
-    "link": "/stories/shiners-war.html"
+    "link": "/stories/shiners-war.html#irish-navies"
   },
   {
     "date": "1875",
@@ -21,7 +21,7 @@
     "title": "The Perley Home",
     "description": "William Goodhue Perley builds his house along Wellington Street. The house later becomes the Perley Home.",
     "image": "/images/upper-town/perley-home-a027381.jpg",
-    "link": "/stories/upper-town.html"
+    "link": "/stories/upper-town.html#notable-people"
   },
   {
     "date": "1912",
@@ -29,7 +29,7 @@
     "title": "Upper Town Expropriation",
     "description": "The Federal Government expropriates the properties north of Wellington Street for future projects.",
     "image": "/images/upper-town/hawkesbury-lumber-e999908718.jpg",
-    "link": "/stories/upper-town.html"
+    "link": "/stories/upper-town.html#expropriation"
   },
   {
     "date": "1934",
@@ -45,7 +45,7 @@
     "title": "Last House Demolished in Upper Town",
     "description": "The last building in Upper Town, 41 Cliff Street, is demolished.",
     "image": "/images/upper-town/41-cliff-street-e010900642.jpg",
-    "link": "/stories/upper-town.html"
+    "link": "/stories/upper-town.html#government-use"
   },
   {
     "date": "May 8, 1910",
@@ -61,7 +61,7 @@
     "title": "Standish Hall Hotel",
     "description": "The Standish Hall Hotel opens to guests and patrons.",
     "image": "/images/standish-hall/standish-hall.jpg",
-    "link": "/stories/standish-hall.html"
+    "link": "/stories/standish-hall.html#private-residence"
   },
   {
     "date": "August 5, 1951",
@@ -69,7 +69,7 @@
     "title": "Fire Destroys Standish Hall",
     "description": "The Standish Hall Hotel suffers from a devastating fire which destroys the original part of the hotel.",
     "image": "/images/standish-hall/hotel-fire.jpg",
-    "link": "/stories/standish-hall.html"
+    "link": "/stories/standish-hall.html#fire"
   },
   {
     "date": "August 4, 1896",
@@ -77,7 +77,7 @@
     "title": "First Public Viewing of Film",
     "description": "The Holland Brothers have the first public viewing of a film using the vitascope in West End Park.",
     "image": "/images/movie-milestones/west-end-park-stage-a027261.jpg",
-    "link": "/stories/movie-milestones.html"
+    "link": "/stories/movie-milestones.html#public-viewing"
   },
   {
     "date": "1893",
@@ -85,6 +85,6 @@
     "title": "Smallpox Outbreak",
     "description": "A smallpox outbreak occurs in Ottawa. As a result, an isolation hospital is setup on Porter Island.",
     "image": "/images/porter-island/porter-island-map.jpg",
-    "link": "/stories/porter-island.html"
+    "link": "/stories/porter-island.html#beginning"
   }
 ]
