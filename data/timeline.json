@@ -1,90 +1,162 @@
 [
-  {
-    "date": "October 18, 1826",
-    "sortYear": "1826",
-    "title": "Bytown Is Settled",
-    "description": "Upper and Lower Bytown becomes available for residency.",
-    "image": "/images/upper-town/upper-town-n0022402k.jpg",
-    "link": "/stories/upper-town.html#origins"
-  },
-  {
-    "date": "1832",
-    "sortYear": "1832",
-    "title": "The Shiners' War Begins",
-    "description": "The construction of the Rideau Canal is complete, leaving the Irish navvies out of work.",
-    "image": "/images/shiners-war/c011864k.jpg",
-    "link": "/stories/shiners-war.html#irish-navies"
-  },
-  {
-    "date": "1875",
-    "sortYear": "1875",
-    "title": "The Perley Home",
-    "description": "William Goodhue Perley builds his house along Wellington Street. The house later becomes the Perley Home.",
-    "image": "/images/upper-town/perley-home-a027381.jpg",
-    "link": "/stories/upper-town.html#notable-people"
-  },
-  {
-    "date": "1912",
-    "sortYear": "1912",
-    "title": "Upper Town Expropriation",
-    "description": "The Federal Government expropriates the properties north of Wellington Street for future projects.",
-    "image": "/images/upper-town/hawkesbury-lumber-e999908718.jpg",
-    "link": "/stories/upper-town.html#expropriation"
-  },
-  {
-    "date": "1934",
-    "sortYear": "1934",
-    "title": "CBC Offices Open",
-    "description": "The Canadian Radio Broadcasting Commission, precursor to the CBC, sets up offices at 41 Cliff Street.",
-    "image": "/images/upper-town/41-cliff-street.jpg",
-    "link": "/stories/upper-town.html#government-use"
-  },
-  {
-    "date": "1938",
-    "sortYear": "1938",
-    "title": "Last House Demolished in Upper Town",
-    "description": "The last building in Upper Town, 41 Cliff Street, is demolished.",
-    "image": "/images/upper-town/41-cliff-street-e010900642.jpg",
-    "link": "/stories/upper-town.html#demolition"
-  },
-  {
-    "date": "May 8, 1910",
-    "sortYear": "1910",
-    "title": "Hull Explosion of 1910",
-    "description": "A devastating explosion occurs at the General Explosives of Montreal Ltd. factory in Hul, Quebec. 11 people die and many are injured from flying stones.",
-    "image": "/images/hull-explosion/X_Magazine_Remains.jpg",
-    "link": "/stories/hull-explosion.html"
-  },
-  {
-    "date": "1930",
-    "sortYear": "1930",
-    "title": "Standish Hall Hotel",
-    "description": "The Standish Hall Hotel opens to guests and patrons.",
-    "image": "/images/standish-hall/standish-hall.jpg",
-    "link": "/stories/standish-hall.html#private-residence"
-  },
-  {
-    "date": "August 5, 1951",
-    "sortYear": "1951",
-    "title": "Fire Destroys Standish Hall",
-    "description": "The Standish Hall Hotel suffers from a devastating fire which destroys the original part of the hotel.",
-    "image": "/images/standish-hall/hotel-fire.jpg",
-    "link": "/stories/standish-hall.html#fire"
-  },
-  {
-    "date": "August 4, 1896",
-    "sortYear": "1896",
-    "title": "First Public Viewing of Film",
-    "description": "The Holland Brothers have the first public viewing of a film using the vitascope in West End Park.",
-    "image": "/images/movie-milestones/west-end-park-stage-a027261.jpg",
-    "link": "/stories/movie-milestones.html#public-viewing"
-  },
-  {
-    "date": "1893",
-    "sortYear": "1893",
-    "title": "Smallpox Outbreak",
-    "description": "A smallpox outbreak occurs in Ottawa. As a result, an isolation hospital is setup on Porter Island.",
-    "image": "/images/porter-island/porter-island-map.jpg",
-    "link": "/stories/porter-island.html#beginning"
-  }
+    {
+        "date": "October 18, 1826",
+        "sortYear": "1826",
+        "title": "Bytown Is Settled",
+        "description": "Upper and Lower Bytown becomes available for residency.",
+        "image": "/images/upper-town/upper-town-n0022402k.jpg",
+        "link": "/stories/upper-town.html#origins"
+    },
+    {
+        "date": "1832",
+        "sortYear": "1832",
+        "title": "The Shiners' War Begins",
+        "description": "The construction of the Rideau Canal is complete, leaving the Irish navvies out of work. They banded together to find with work with the help from Peter Aylen. The group called themselves the Shiners.",
+        "image": "/images/shiners-war/c011864k.jpg",
+        "link": "/stories/shiners-war.html#irish-navies"
+    },
+    {
+        "date": "1875",
+        "sortYear": "1875",
+        "title": "The Perley Home",
+        "description": "William Goodhue Perley builds his house along Wellington Street. The house later becomes the Perley Home.",
+        "image": "/images/upper-town/perley-home-a027381.jpg",
+        "link": "/stories/upper-town.html#notable-people"
+    },
+    {
+        "date": "1912",
+        "sortYear": "1912",
+        "title": "Upper Town Expropriation",
+        "description": "The Federal Government expropriates the properties north of Wellington Street for future projects.",
+        "image": "/images/upper-town/hawkesbury-lumber-e999908718.jpg",
+        "link": "/stories/upper-town.html#expropriation"
+    },
+    {
+        "date": "1934",
+        "sortYear": "1934",
+        "title": "CBC Offices Open",
+        "description": "The Canadian Radio Broadcasting Commission, precursor to the CBC, sets up offices at 41 Cliff Street.",
+        "image": "/images/upper-town/41-cliff-street.jpg",
+        "link": "/stories/upper-town.html#government-use"
+    },
+    {
+        "date": "1938",
+        "sortYear": "1938",
+        "title": "Last House Demolished in Upper Town",
+        "description": "The last building in Upper Town, 41 Cliff Street, is demolished.",
+        "image": "/images/upper-town/41-cliff-street-e010900642.jpg",
+        "link": "/stories/upper-town.html#demolition"
+    },
+    {
+        "date": "May 8, 1910",
+        "sortYear": "1910",
+        "title": "Hull Explosion of 1910",
+        "description": "A devastating explosion occurs at the General Explosives of Montreal Ltd. factory in Hul, Quebec. 11 people die and many are injured from flying stones.",
+        "image": "/images/hull-explosion/X_Magazine_Remains.jpg",
+        "link": "/stories/hull-explosion.html"
+    },
+    {
+        "date": "1930",
+        "sortYear": "1930",
+        "title": "Standish Hall Hotel",
+        "description": "The Standish Hall Hotel opens to guests and patrons.",
+        "image": "/images/standish-hall/standish-hall.jpg",
+        "link": "/stories/standish-hall.html#private-residence"
+    },
+    {
+        "date": "August 5, 1951",
+        "sortYear": "1951",
+        "title": "Fire Destroys Standish Hall",
+        "description": "The Standish Hall Hotel suffers from a devastating fire which destroys the original part of the hotel.",
+        "image": "/images/standish-hall/hotel-fire.jpg",
+        "link": "/stories/standish-hall.html#fire"
+    },
+    {
+        "date": "August 4, 1896",
+        "sortYear": "1896",
+        "title": "First Public Viewing of Film",
+        "description": "The Holland Brothers have the first public viewing of a film using the vitascope in West End Park.",
+        "image": "/images/movie-milestones/west-end-park-stage-a027261.jpg",
+        "link": "/stories/movie-milestones.html#public-viewing"
+    },
+    {
+        "date": "1893",
+        "sortYear": "1893",
+        "title": "Smallpox Outbreak",
+        "description": "A smallpox outbreak occurs in Ottawa. As a result, an isolation hospital is setup on Porter Island.",
+        "image": "/images/porter-island/porter-island-map.jpg",
+        "link": "/stories/porter-island.html#beginning"
+    },
+    {
+        "date": "1913",
+        "sortYear": "1913",
+        "title": "Hopewell Hospital Opens",
+        "description": "After years of reported horrid conditions on Porter Island, the state-of-the-art Hopewell Hospital opens to take in smallpox patients.",
+        "image": "/images/porter-island/hopewell-hospital.jpg",
+        "link": "/stories/porter-island.html#hopewell-opens"
+    },
+    {
+        "date": "1863",
+        "sortYear": "1863",
+        "title": "Russell House Hotel Opens",
+        "description": "James Gouin purchases the Campbell House Hotel at the corner of Elgin and Sparks, renovates it and renames it the Russell House Hotel. After further renovations in 1880, the hotel became an impressive sight in the young capital.",
+        "image": "/images/russell-house/russell-house-a008434.jpg",
+        "link": "/stories/russell-house.html#russell-house-opens"
+    },
+    {
+        "date": "April 14, 1928",
+        "sortYear": "1928",
+        "title": "Fire at the Russell House Hotel!",
+        "description": "3 years after it had closed, the Russell House Hotel is destroyed in a spectacular fire watched by thousands of spectators.",
+        "image": "/images/russell-house/hotel-fire-a025086.jpg",
+        "link": "/stories/russell-house.html#russell-house-fire"
+    },
+    {
+        "date": "August 15, 1866",
+        "sortYear": "1866",
+        "title": "Ottawa City Passenger Railway Founded",
+        "description": "The Legislative Council Assembly of Canada granted a perpetual charter to the Ottawa City Passenger Railway. By 1870, horse drawn streetcars were in service in Ottawa.",
+        "image": "/images/ottawa-streetcars/c002458.jpg",
+        "link": "/stories/ottawa-streetcars.html#ocpr-founded"
+    },
+    {
+        "date": "1872",
+        "sortYear": "1872",
+        "title": "The Great Epizootic",
+        "description": "The Great Epizootic, a global-wide equine influenza, causes interuptions and cancelled trips for Ottawa streetcars.",
+        "image": "/images/ottawa-streetcars/1872-11-01_Epizootic_ad.jpg",
+        "link": "/stories/ottawa-streetcars.html#epizootic"
+    },
+    {
+        "date": "February 26, 1891",
+        "sortYear": "1891",
+        "title": "Ottawa Electric Street Railway Incorporated",
+        "description": "The Ottawa Electric Street Railway is incorporated by Thomas Ahearn and Warren Soper.",
+        "image": "/images/ottawa-streetcars/ottawa-electric-street-railway.jpg",
+        "link": "/stories/ottawa-streetcars.html#oesr"
+    },
+    {
+        "date": "1894",
+        "sortYear": "1894",
+        "title": "Two Streetcar Companies Merge",
+        "description": "The Ottawa City Passenger Railway and the Ottawa Electric Street Railway merge to form the Ottawa Electric Railway Company (OER).",
+        "image": "/images/ottawa-streetcars/oer-logo.jpg",
+        "link": "/stories/ottawa-streetcars.html#oer"
+    },
+    {
+        "date": "May 24, 1900",
+        "sortYear": "1900",
+        "title": "Britannia-on-the-Bay Opens",
+        "description": "The OER's amusement park and beach, Britannia-on-the-Bay, opens along with Britannia streetcar line 3 days earlier.",
+        "image": "/images/ottawa-streetcars/briannia-on-the-bay.jpg",
+        "link": "/stories/ottawa-streetcars.html#britannia"
+    },
+    {
+        "date": "July 2, 1919",
+        "sortYear": "1919",
+        "title": "OER Workers Strike!",
+        "description": "OER workers go on strike. The strike lasts until July 26.",
+        "image": "/images/ottawa-streetcars/CA001510-W.jpg",
+        "link": "/stories/ottawa-streetcars.html#strike"
+    }
 ]

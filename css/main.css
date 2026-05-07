@@ -349,7 +349,7 @@ td {
 #movie-milestones {
 	background: linear-gradient(rgba(75, 58, 27, 0.4), 
 				rgba(75, 58, 27, 0.4)), 
-				url("/images/movie-milestones/monument-national-e011782876.jpg")
+				url("/images/movie-milestones/family-theatre-a042686-v6.jpg")
 				center / cover no-repeat;
 }
 #titanic-stories {
@@ -361,7 +361,7 @@ td {
 #shiners-war {
 	background: linear-gradient(rgba(75, 58, 27, 0.4), 
 				rgba(75, 58, 27, 0.4)), 
-				url("/images/shiners-war/peter-aylen-house.jpg")
+				url("/images/shiners-war/peter-aylen-house-bw.jpg")
 				center / cover no-repeat;
 }
 #upper-town {
@@ -375,6 +375,54 @@ td {
 				rgba(75, 58, 27, 0.4)), 
 				url("/images/hull-explosion/paper-image-2.jpg")
 				center / cover no-repeat;
+}
+#ottawa-firsts {
+    background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/ottawa-firsts/hammond-baldwin-slattery.jpg")
+				center / cover no-repeat;
+}
+#cp-rail-plan {
+    background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/cp-rail-plan/central-depot.jpg")
+				center 58% / cover no-repeat;
+}
+#todd-report {
+    background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/todd-report/rockcliffe-park-entrance.jpg")
+				center 60% / cover no-repeat;
+}
+#ottawa-streetcars {
+    background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/ottawa-streetcars/a016974-v8_1.jpg")
+				center / cover no-repeat;
+}
+#bytown-painters {
+    background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/bytown-painters/burrows-bytown-bridges-bw.jpg")
+				center / cover no-repeat;
+}
+#street-names {
+    background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/street-names/sparks-street-a028198.jpg")
+				center 80% / cover no-repeat;
+}
+
+blockquote {
+    margin: 2rem 2rem !important;
+    padding-left: 1.5rem;
+    border-left: 4px solid #4b3a1b;
+    font-style: italic;
+}
+
+blockquote p {
+    margin: 0;
+    color: #5A3030;
 }
 
 .pg-title h2 {
@@ -463,14 +511,26 @@ p.tiny {
 	padding-right: 10px !important;
 }
 p.source {
-	font-size: 0.8em;
+	font-size: 0.6em;
 	color: #FFFFFF;
 	text-align: center !important;
+    align-items: center; 
 	padding-left: 10px !important;
 	padding-right: 10px !important;
+    padding-top: 5px !important;
+    border-top: 1px solid #444444;
+    margin-bottom: 5px !important;
 }
 p.center {
 	text-align: center !important;
+}
+.fo-highlight {
+    color: #FFFFFF !important;
+	font-family: ForgottenOttawaSC !important;
+	font-size: 1.3em !important;
+	font-weight: bold !important;
+    -webkit-text-stroke: 5px #661414;
+	paint-order: stroke fill;
 }
 footer {
 	/* background: rgba(50, 113, 231, 0.6);  */
@@ -937,6 +997,8 @@ figcaption.fottawa {
 .youtube {
 	margin: auto;
 	display: block;
+    min-width: 1080px !important;
+    min-height: 576px !important;
 }
 
 .stories-heading {

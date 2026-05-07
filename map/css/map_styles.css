@@ -28,15 +28,32 @@ a.skiplink:focus {
     outline: #4A74A8 solid 0.15em;
 }
 #tooltip {
+    /*width: 100%;*/
+    /* height: 100%; */
     position: flex; 
-    background: #581a1a; 
-    padding: 4px; 
-    border: 1px solid black; 
+    /* background: #581a1a; */
+    /* background-image: url("/files/banner.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;*/
+    /* padding: 4px; */
+    /*border: 1px solid black; */
     display: none;
-    border-radius: 10px;
-    color: #FFFFFF;
+    /* border-radius: 10px; */
+    color: #581A1A;
     font-family: 'ForgottenOttawaSC' !important;
     font-size: 1.4em;
+    font-weight: 700;
+}
+.tooltip-content {
+    background-image: url("/files/banner.png");
+    background-position: center;
+    background-size: cover; /* Optional: ensures image covers area */
+    color: white;           /* Ensures text is visible */
+    padding: 20px 40px;
+    border-radius: 5px;
+    width: 100%;
+    /* height: 50px; */
 }
 .map-title {
     height: 20vh !important;

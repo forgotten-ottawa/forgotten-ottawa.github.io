@@ -108,5 +108,71 @@
         "image": "/images/thumbnails/hull-explosion.jpg",
         "summary": "In 1910, Hull was devestated by an explosion at an explosives factory",
         "url": "/stories/hull-explosion.html"
+    },
+    {
+        "id": "todd-report",
+        "title": "Capital Plans: The Todd Report",
+        "sort_year": "1903",
+        "date": "1903",
+        "categories": ["planning", "politics"],
+        "coordinates": [-75.69945,45.42471],
+        "image": "/images/thumbnails/todd-report.jpg",
+        "summary": "The first plan to help shape the future of Canada’s capital was the Todd Report in 1903",
+        "url": "/stories/todd-report.html"
+    },
+    {
+        "id": "street-names",
+        "title": "Origin of Ottawa Street Names",
+        "sort_year": "1826",
+        "date": "1826-2026",
+        "categories": ["transport"],
+        "coordinates": [-75.69584,45.41482],
+        "image": "/images/thumbnails/street-names.jpg",
+        "summary": "The names of Ottawa streets honour politicians, local pioneers, local businessmen, royalty, significant Ottawa citizens and place names",
+        "url": "/stories/street-names.html"
+    },
+    {
+        "id": "cp-rail-plans",
+        "title": "CP Rail's Grand Plan",
+        "sort_year": "1910",
+        "date": "1910",
+        "categories": ["planning", "politics"],
+        "coordinates": [-75.68743,45.42182],
+        "image": "/images/thumbnails/cp-rail-plan.jpg",
+        "summary": "If Canadian Pacific Railway (CPR) had had its way and gone through with a major project in the 1910s, the centre of the city would look much different today",
+        "url": "/stories/cp-rail-plan.html"
+    },
+    {
+        "id": "ottawa-firsts",
+        "title": "Ottawa Firsts",
+        "sort_year": "1850",
+        "date": "1850-1928",
+        "categories": ["event"],
+        "coordinates": [-75.69742,45.42291],
+        "image": "/images/thumbnails/ottawa-firsts.jpg",
+        "summary": "Explore the milestones of Ottawa’s historical firsts",
+        "url": "/stories/ottawa-firsts.html"
+    },
+    {
+        "id": "ottawa-streetcars",
+        "title": "Ottawa Streetcars",
+        "sort_year": "1870",
+        "date": "1870-1959",
+        "categories": ["transport"],
+        "coordinates": [-75.70142,45.42118],
+        "image": "/images/thumbnails/ottawa-streetcars.jpg",
+        "summary": "Revisit the 90-year legacy of Ottawa’s streetcars",
+        "url": "/stories/ottawa-streetcars.html"
+    },
+    {
+        "id": "bytown-painters",
+        "title": "Painters of Bytown",
+        "sort_year": "1826",
+        "date": "1826-1855",
+        "categories": ["planning"],
+        "coordinates": [-75.69913,45.42403],
+        "image": "/images/thumbnails/bytown-painters.jpg",
+        "summary": "Learn how John Burrows and Thomas Burrowes documented the canal's progress while working as its overseers",
+        "url": "/stories/bytown-painters.html"
     }
 ]
