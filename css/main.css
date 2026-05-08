@@ -601,7 +601,7 @@ ul.posts li {
 }
 
 #timeline {
-	background-color: rgb(33 33 66 / 0.3);
+	background-color: rgba(65, 65, 65, 0.3);
 }
 
 #map {
@@ -894,6 +894,7 @@ figcaption.fottawa {
     width: auto;
     height: auto;
     object-fit: contain;
+    border: 1px solid #000000;
 }
 
 .index-col {
