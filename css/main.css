@@ -593,12 +593,12 @@ ul.posts li {
 	background-color: rgb(33 33 33 / 0.3);
 }
 
-#latest-story .index-col {
+/* #latest-story .index-col {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* prevents spill */
-}
+    overflow: hidden; /* prevents spill 
+} */
 
 #timeline {
 	background-color: rgba(65, 65, 65, 0.3);
