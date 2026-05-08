@@ -895,6 +895,7 @@ figcaption.fottawa {
     height: auto;
     object-fit: contain;
     border: 1px solid #000000;
+    box-shadow: 10px 10px 30px rgba(0,0,0);
 }
 
 .index-col {
