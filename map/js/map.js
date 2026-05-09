@@ -96,9 +96,9 @@ var styleFunction = function(feature, resolution) {
     return [
         new ol.style.Style({
             image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
-                anchor: [0.5, 46],
+                /* anchor: [0.5, 46],
                 anchorXUnits: 'fraction',
-                anchorYUnits: 'pixels',
+                anchorYUnits: 'pixels', */
                 opacity: 0.95,
                 src: '/files/scroll-icon.png',
                 scale: 0.3
@@ -106,6 +106,17 @@ var styleFunction = function(feature, resolution) {
         })
     ];
 };
+
+var hoverStyle = new ol.style.Style({
+    image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
+        /* anchor: [0.5, 0],
+        anchorXUnits: 'fraction',
+        anchorYUnits: 'fraction', */
+        opacity: 0.95,
+        src: '/files/scroll-icon-shadow.png',
+        scale: 0.3
+    })),
+});
 
 const vectorLayer = new ol.layer.Vector({
     source: vectorSource,
@@ -142,6 +153,7 @@ var tooltipOverlay = new ol.Overlay({
 map.addOverlay(tooltipOverlay);
 
 // 2. Set up the hover interaction (pointermove)
+var currentFeature;
 map.on('pointermove', function(evt) {
     if (evt.dragging) { return; }
   
@@ -150,7 +162,7 @@ map.on('pointermove', function(evt) {
         return f;
     });
 
-    if (feature) {
+    /* if (feature) {
         var coords = feature.getGeometry().getCoordinates();
         tooltipElement.innerHTML = feature.get('title'); // Assuming a 'name' attribute
         tooltipOverlay.setPosition(coords);
@@ -159,6 +171,24 @@ map.on('pointermove', function(evt) {
     } else {
         tooltipElement.style.display = 'none';
         map.getTargetElement().style.cursor = '';
+    } */
+
+    if (feature !== currentFeature) {
+        if (currentFeature) {
+            currentFeature.setStyle(styleFunction); // Reset previous
+        }
+        if (feature) {
+            feature.setStyle(hoverStyle);
+            var coords = feature.getGeometry().getCoordinates();
+            tooltipElement.innerHTML = feature.get('title'); // Assuming a 'name' attribute
+            tooltipOverlay.setPosition(coords);
+            tooltipElement.style.display = 'flex';
+            map.getTargetElement().style.cursor = 'pointer';
+        } else {
+            tooltipElement.style.display = 'none';
+            map.getTargetElement().style.cursor = '';
+        }
+        currentFeature = feature;
     }
 });
 
