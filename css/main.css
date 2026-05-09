@@ -1161,3 +1161,13 @@ figcaption.fottawa {
 		padding: 1rem;
   	}
 }
+
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        margin-left: 0.5rem;
+        flex-grow: 0;
+    }
+    .navbar > .container-fluid {
+        justify-content: flex-start;
+    }
+}

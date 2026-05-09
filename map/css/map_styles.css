@@ -28,33 +28,125 @@ a.skiplink:focus {
     outline: #4A74A8 solid 0.15em;
 }
 #tooltip {
-    /*width: 100%;*/
-    /* height: 100%; */
-    position: flex; 
-    /* background: #581a1a; */
-    /* background-image: url("/files/banner.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;*/
-    /* padding: 4px; */
-    /*border: 1px solid black; */
-    display: none;
-    /* border-radius: 10px; */
+    align-items: center;
+    justify-content: center;
     color: #581A1A;
     font-family: 'ForgottenOttawaSC' !important;
     font-size: 1.4em;
     font-weight: 700;
 }
 .tooltip-content {
-    background-image: url("/files/banner.png");
+    background-image: url("/files/banner-centre.png");
     background-position: center;
     background-size: cover; /* Optional: ensures image covers area */
-    color: white;           /* Ensures text is visible */
-    padding: 20px 40px;
-    border-radius: 5px;
-    width: 100%;
-    /* height: 50px; */
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    color: white;           /* Ensures text is visible  */
+    height: 60px;
+    padding: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
+
+.tooltip-content::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 80px;
+    height: 60px;
+
+    background-image: url("/files/banner-left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+
+    pointer-events: none;
+}
+
+/* RIGHT END */
+.tooltip-content::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 80px;
+    height: 60px;
+
+    background-image: url("/files/banner-right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+
+    pointer-events: none;
+}
+
+/* .tooltip-content {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100px;
+
+    text-align: center;
+    white-space: nowrap;
+
+    padding-left: 80px;
+    padding-right: 80px;
+
+    box-sizing: border-box;
+
+    transform: translateY(3px);
+
+    background-image: url("/files/banner-centre.png");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.tooltip-content::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 80px;
+    height: 100%;
+
+    background-image: url("/files/banner-left.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+
+    pointer-events: none;
+}
+
+/* RIGHT END 
+.tooltip-content::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    width: 80px;
+    height: 100%;
+
+    background-image: url("/files/banner-right.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+
+    pointer-events: none;
+} */
+
 .map-title {
     height: 20vh !important;
     margin-top: 20px !important;

@@ -65,6 +65,28 @@ fetch('/data/stories.json')
 
     });
 
+// var styleFunction = function(feature, resolution) {
+//     // Get property from feature
+//     //var type = feature.get('type'); 
+//     var radius = 7;
+//     var color = 'blue';
+
+//     return [
+//         new ol.style.Style({
+//             image: new ol.style.Circle({
+//                 radius: radius,
+//                 fill: new ol.style.Fill({
+//                     color: color
+//                 }),
+//                 stroke: new ol.style.Stroke({
+//                     color: 'white',
+//                     width: 2
+//                 })
+//             })
+//         })
+//     ];
+// };
+
 var styleFunction = function(feature, resolution) {
     // Get property from feature
     //var type = feature.get('type'); 
@@ -73,16 +95,14 @@ var styleFunction = function(feature, resolution) {
 
     return [
         new ol.style.Style({
-            image: new ol.style.Circle({
-                radius: radius,
-                fill: new ol.style.Fill({
-                    color: color
-                }),
-                stroke: new ol.style.Stroke({
-                    color: 'white',
-                    width: 2
-                })
-            })
+            image: new ol.style.Icon(/** @type {olx.style.IconOptions} */ ({
+                anchor: [0.5, 46],
+                anchorXUnits: 'fraction',
+                anchorYUnits: 'pixels',
+                opacity: 0.95,
+                src: '/files/scroll-icon.png',
+                scale: 0.3
+            })),
         })
     ];
 };
@@ -134,7 +154,7 @@ map.on('pointermove', function(evt) {
         var coords = feature.getGeometry().getCoordinates();
         tooltipElement.innerHTML = feature.get('title'); // Assuming a 'name' attribute
         tooltipOverlay.setPosition(coords);
-        tooltipElement.style.display = 'block';
+        tooltipElement.style.display = 'flex';
         map.getTargetElement().style.cursor = 'pointer';
     } else {
         tooltipElement.style.display = 'none';
