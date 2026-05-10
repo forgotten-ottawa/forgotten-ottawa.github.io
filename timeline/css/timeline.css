@@ -133,7 +133,7 @@
 	text-decoration: none !important;
 }
 
-.timeine-img {
+.timeline-img {
     box-shadow: 1px 1px 5px black;
 }
 
@@ -143,45 +143,53 @@
 
 @media screen and (max-width: 768px) {
 
-  /* Move timeline line to the left */
-  .timeline::after {
-    left: 20px;
-    transform: none;
-  }
+    /* Move timeline line to the left */
+    .timeline::after {
+        left: 20px;
+        transform: none;
+    }
 
-  /* Full width items */
-  .timeline-item {
-    width: 100%;
-    padding: 10px 20px 10px 60px;
-    left: 0 !important;
-    text-align: left;
-  }
+    /* Full width items */
+    .timeline-item {
+        width: 100%;
+        padding: 10px 20px 10px 60px;
+        left: 0 !important;
+        text-align: left;
+    }
 
-  /* Force all items to behave like "right side" */
-  .timeline-item.left,
-  .timeline-item.right {
-    left: 0;
-  }
+    /* Force all items to behave like "right side" */
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+    }
 
-  /* Position dots on left spine */
-  .timeline-item::after {
-    left: 13px;
-    right: auto;
-  }
+    /* Position dots on left spine */
+    .timeline-item::after {
+        left: 13px;
+        right: auto;
+    }
 
-  /* Remove connector lines (cleaner on mobile) */
-  .timeline-item .content::before {
-    display: none;
-  }
+    /* Remove connector lines (cleaner on mobile) */
+    .timeline-item .content::before {
+        display: none;
+    }
 
-  /* Slightly reduce spacing */
-  .content {
-    padding: 16px;
-  }
+    /* Slightly reduce spacing */
+    .content {
+        padding: 16px;
+    }
 
-  /* Optional: make images slightly smaller */
-  .content img {
-    max-height: 220px;
-    object-fit: cover;
-  }
+    /* Optional: make images slightly smaller */
+    .content img {
+        max-height: 220px;
+        object-fit: cover;
+    }
+
+    .timeline-item.right::after {
+	    left: 13px;
+    }
+
+    .timeline-img {
+        display: none;
+    }
 }

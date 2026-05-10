@@ -23,7 +23,7 @@ async function loadTimeline() {
         const timelineItem = document.createElement('div');
         timelineItem.className = `timeline-item ${side}`;
 
-        const img_str = item.image ? `<img class="timeine-img" src="${item.image}" alt="">` : ''
+        const img_str = item.image ? `<img class="timeline-img" src="${item.image}" alt="">` : ''
 
         timelineItem.innerHTML = `
             <div class="content">
