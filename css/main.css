@@ -250,7 +250,8 @@ h1 {
 
 .subhero-overlay {
     /* background: rgba(0, 0, 0, 0.5); /* Darkens the image so text is readable */
-    padding: 2rem;
+    /* padding: 2rem; */
+    min-width: 100%;
     border-radius: 5px;
 }
 
@@ -385,7 +386,7 @@ td {
 #cp-rail-plan {
     background: linear-gradient(rgba(75, 58, 27, 0.4), 
 				rgba(75, 58, 27, 0.4)), 
-				url("/images/cp-rail-plan/central-depot.jpg")
+				url("/images/cp-rail-plan/central-depot-a034079.jpg")
 				center 58% / cover no-repeat;
 }
 #todd-report {
@@ -410,6 +411,12 @@ td {
     background: linear-gradient(rgba(75, 58, 27, 0.4), 
 				rgba(75, 58, 27, 0.4)), 
 				url("/images/street-names/sparks-street-a028198.jpg")
+				center 80% / cover no-repeat;
+}
+#sewer-explosion {
+    background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/ottawa-sewer-explosions/grocery-store.png")
 				center 80% / cover no-repeat;
 }
 
@@ -488,7 +495,7 @@ h4.sidebar {
 p {
 	/*font-family: Catamaran;*/
 	font-family: 'Merriweather Sans';
-    font-size: 1.4em;
+    font-size: clamp(1rem, 1.2vw, 1.4rem);
     line-height: 1.5em;
     color: #360000;
 }
@@ -576,7 +583,8 @@ ul.posts li {
 
 .guest-list {
 	font-family: Merriweather Sans;
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
+    font-size: clamp(1em, 1.1vw, 1.3em);
     line-height: 1.5em;
     color: #360000;
 }
@@ -780,10 +788,17 @@ img.fottawa {
 	border-color: #666666 !important;
 }
 
+.portrait {
+    width: 50% !important;
+}
+.landscape {
+    width: 75% !important;
+}
+
 figcaption.fottawa {
 	color: #FFFFFF;
 	padding: 5px;
-	font-size: 1.4em;
+	font-size: clamp(1em, 1.2vw, 1.4em);
 	text-align: center;
 	border: 1px solid;
 	border-color: #666666;
@@ -1078,12 +1093,18 @@ figcaption.fottawa {
 }
 
 .stories-thumbnail {
+    /* width: 100%;
+    height: auto;
+    display: block; */
 	box-shadow: 5px 5px 15px #000000 !important;
+    max-width: 100%;
 }
 
 .stories-thumbnail-div {
+    padding: 25px;
 	text-align: center;
 	height: 75%;
+    overflow: hidden;
 }
 
 /*.index-height {
@@ -1167,6 +1188,9 @@ figcaption.fottawa {
         max-width: 640px !important;
         max-height: 360px !important;
     } */
+    /* .stories-thumbnail {
+        max-width: 250px !important;
+    } */
 }
 
 @media (max-width: 991.98px) {
@@ -1174,6 +1198,12 @@ figcaption.fottawa {
     	background-color: #581a1a; /* or your navbar color */
 		padding: 1rem;
   	}
+    .portrait {
+        width: 75% !important;
+    }
+    .landscape {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 767.98px) {
