@@ -32,7 +32,7 @@ function generateCategoryFilters(stories) {
 
     categories.forEach(cat => {
         const label = document.createElement('label');
-        label.className = "me-3";
+        label.className = "me-3 filter-chkbox";
 
         label.innerHTML = `
             <input type="checkbox" value="${cat}">
@@ -62,13 +62,13 @@ function filterAndRender() {
     let filtered = [...allStories];
 
     // SEARCH
-    const search = document.getElementById('searchInput').value.toLowerCase();
+    /* const search = document.getElementById('searchInput').value.toLowerCase();
     if (search) {
         filtered = filtered.filter(story =>
             story.title.toLowerCase().includes(search) ||
             story.summary.toLowerCase().includes(search)
         );
-    }
+    } */
 
     // CATEGORY FILTER
     if (activeCategories.size > 0) {
@@ -148,11 +148,11 @@ function updateResultsCount(count) {
 // ============================
 
 // Debounced search (smoother UX)
-let searchTimeout;
+/* let searchTimeout;
 document.getElementById('searchInput').addEventListener('input', () => {
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(filterAndRender, 200);
-});
+});*/
 
 // Sorting
 document.getElementById('sortSelect')

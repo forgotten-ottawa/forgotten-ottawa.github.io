@@ -419,6 +419,12 @@ td {
 				url("/images/ottawa-sewer-explosions/grocery-store.png")
 				center 80% / cover no-repeat;
 }
+#shorts-ban {
+    background: linear-gradient(rgba(75, 58, 27, 0.4), 
+				rgba(75, 58, 27, 0.4)), 
+				url("/images/shorts-ban/mooneys-bay-1960.jpg")
+				center / cover no-repeat;
+}
 
 blockquote {
     margin: 2rem 2rem !important;
@@ -549,8 +555,9 @@ footer {
 	background: -moz-linear-gradient(left top, #000022 0%, 0000cc 100%);
 	background: -webkit-linear-gradient(left top, #000022 0%,#0000cc 100%); */
     /* border-top: 1px solid #d5d5d5;*/ 
-    font-size: 1em;
+    font-size: 1.2em;
 	border-radius: 0px;
+    padding: 5px;
 }
 hr.standard {
 	height: 1px;
@@ -570,6 +577,8 @@ p.description {
 	font-size: small;
 	color: #FFFFFF;
 	margin: 0px !important;
+    font-size: 0.9em;
+    font-family: ForgottenOttawaSC !important;
 }
 
 ul.posts { 
@@ -953,6 +962,14 @@ figcaption.fottawa {
 	padding-left: 5px;
     /* vertical-align: top; */
     width: 0;
+}
+
+.filter-chkbox {
+	/*font-family: Catamaran;*/
+	font-family: 'Merriweather Sans';
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    line-height: 1em;
+    color: #360000;
 }
 
 .fire-idx {

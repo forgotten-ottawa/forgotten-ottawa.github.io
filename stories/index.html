@@ -20,17 +20,23 @@ keywords:
 <div class="container my-5">
 	<div class="stories-filters mb-4">
 
-    	<input type="text" id="searchInput" class="form-control mb-3"
-           	placeholder="Search the stories...">
+    	<!--<input type="text" id="searchInput" class="form-control mb-3"
+           	placeholder="Search the stories...">-->
 
+        <p>Filters:</p>
     	<div id="categoryFilters" class="d-flex flex-wrap gap-3"></div>
 
-    	<div class="mt-3">
-      		<select id="sortSelect" class="form-select w-auto">
-				<option value="newest">Newest First</option>
-				<option value="oldest">Oldest First</option>
-				<option value="title">Title A–Z</option>
-      		</select>
+    	<div class="row mt-3">
+            <div class="col-md-2">
+                <p style="margin-bottom: 0px;">Sort Start Date by:</p>
+            </div>
+            <div class="col-md-10">
+                <select id="sortSelect" class="form-select w-auto">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="title">Title A–Z</option>
+                </select>
+            </div>
     	</div>
 
   	</div>

@@ -169,10 +169,21 @@
         "title": "Painters of Bytown",
         "sort_year": "1826",
         "date": "1826-1855",
-        "categories": ["planning"],
+        "categories": ["art"],
         "coordinates": [-75.69913,45.42403],
         "image": "/images/thumbnails/bytown-painters.jpg",
         "summary": "Learn how John Burrows and Thomas Burrowes documented the canal's progress while working as its overseers",
         "url": "/stories/bytown-painters.html"
+    },
+    {
+        "id": "shorts-ban",
+        "title": "1950 Shorts Ban",
+        "sort_year": "1950",
+        "date": "1950-1951",
+        "categories": ["politics"],
+        "coordinates": [-75.80282,45.36724],
+        "image": "/images/thumbnails/shorts-ban.jpg",
+        "summary": "In the summer of 1950, many pushed to ban the wearing of shorts in Ottawa",
+        "url": "/stories/shorts-ban.html"
     }
 ]
